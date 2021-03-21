@@ -1,6 +1,6 @@
-﻿using Utils.Helpers;
+﻿using MG.Utils.Helpers;
 
-namespace Utils.Dates
+namespace MG.Utils.Dates
 {
     /// <summary>
     /// Represents Time Range between start and end of the one single day.

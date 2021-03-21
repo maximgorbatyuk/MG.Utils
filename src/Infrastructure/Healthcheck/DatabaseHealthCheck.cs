@@ -2,11 +2,11 @@
 using System.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
+using MG.Utils.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using Utils.Helpers;
 
-namespace WebHost.Infrastructure.Healthcheck
+namespace MG.WebHost.Infrastructure.Healthcheck
 {
     public class DatabaseHealthCheck : IHealthCheck
     {

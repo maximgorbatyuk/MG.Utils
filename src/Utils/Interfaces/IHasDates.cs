@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Utils.Interfaces
+namespace MG.Utils.Interfaces
 {
     public interface IHasDates
     {

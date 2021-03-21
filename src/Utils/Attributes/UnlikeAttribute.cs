@@ -1,10 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Localization;
-using Utils.I18N;
+using MG.Utils.I18N;
 
-namespace Utils.Attributes
+namespace MG.Utils.Attributes
 {
     // copied from https://stackoverflow.com/a/35208420
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
@@ -36,7 +34,7 @@ namespace Utils.Attributes
 
             string ErrorAccessor()
             {
-                return validationContext.ErrorMessage(ErrorMessage ?? DataAnnotationErrorMessages.UnlikeError, validationContext.DisplayName, OtherProperty);
+                return string.Format(ErrorMessage ?? DataAnnotationErrorMessages.UnlikeError, validationContext.DisplayName, OtherProperty);
             }
 
             var otherProperty = validationContext.ObjectInstance.GetType()

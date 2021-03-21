@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
-using Utils.Exceptions;
+using MG.Utils.Exceptions;
 
-namespace Utils.Security
+namespace MG.Utils.Security
 {
     public readonly struct ComplexityScore
     {

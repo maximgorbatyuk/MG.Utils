@@ -1,12 +1,12 @@
 ﻿using MassTransit;
+using MG.Utils.ValueObjects;
+using MG.WebHost.Infrastructure.Azure.ServiceBus;
+using MG.WebHost.Infrastructure.Contracts.MessageBroker;
+using MG.WebHost.Infrastructure.Infrastructure.MassTransitConsumers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Utils.ValueObjects;
-using WebHost.Infrastructure.Azure.ServiceBus;
-using WebHost.Infrastructure.Contracts.MessageBroker;
-using WebHost.Infrastructure.Infrastructure.MassTransitConsumers;
 
-namespace WebHost.Infrastructure.Config
+namespace MG.WebHost.Infrastructure.Config
 {
     public class MessageBrokerConfig
     {

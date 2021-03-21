@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Utils.Helpers;
+using MG.Utils.Helpers;
 
-namespace Utils.Dates
+namespace MG.Utils.Dates
 {
     /// <summary>
     /// Represents class that contains a collection of bounded <see cref="DayRange"/>

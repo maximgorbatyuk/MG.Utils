@@ -1,7 +1,6 @@
 ﻿using System;
-using Utils.Exceptions;
 
-namespace Utils.Interfaces
+namespace MG.Utils.Interfaces
 {
     public interface IHasFromToDates
     {

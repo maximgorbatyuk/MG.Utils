@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 using ClosedXML.Excel;
-using Utils.Helpers;
+using MG.Utils.Helpers;
 
-namespace WebHost.Infrastructure.Contracts.Worksheets
+namespace MG.WebHost.Infrastructure.Contracts.Worksheets
 {
     public abstract class ExcelWorkbookBase
     {

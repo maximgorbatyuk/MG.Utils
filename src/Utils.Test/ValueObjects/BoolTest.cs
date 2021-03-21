@@ -1,7 +1,7 @@
-﻿using Utils.ValueObjects;
+﻿using MG.Utils.ValueObjects;
 using Xunit;
 
-namespace Utils.Test.ValueObjects
+namespace MG.Utils.Test.ValueObjects
 {
     public class BoolTest
     {

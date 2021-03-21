@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
+using MG.Utils.Helpers;
+using MG.WebHost.Infrastructure.Contracts.MessageBroker;
 using Microsoft.Extensions.Logging;
-using Utils.Helpers;
-using WebHost.Infrastructure.Contracts.MessageBroker;
 
-namespace WebHost.Infrastructure.Infrastructure.MessageBrokers
+namespace MG.WebHost.Infrastructure.Infrastructure.MessageBrokers
 {
     public abstract class BrokerPublisherBase : IMessageBroker
     {

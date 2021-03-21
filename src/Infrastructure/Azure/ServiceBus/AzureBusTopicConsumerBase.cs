@@ -2,13 +2,13 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Azure.Messaging.ServiceBus;
+using MG.Utils.ValueObjects;
+using MG.WebHost.Infrastructure.Contracts.MessageBroker;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Utils.ValueObjects;
-using WebHost.Infrastructure.Contracts.MessageBroker;
 
-namespace WebHost.Infrastructure.Azure.ServiceBus
+namespace MG.WebHost.Infrastructure.Azure.ServiceBus
 {
     public abstract class AzureBusTopicConsumerBase : BackgroundService
     {

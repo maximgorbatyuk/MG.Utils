@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using MG.Utils.Helpers;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using Utils.Helpers;
 
-namespace Utils.Serialization
+namespace MG.Utils.AspNetCore.Serialization.SnakeCase
 {
     public static class JsonSerializationExtensions
     {

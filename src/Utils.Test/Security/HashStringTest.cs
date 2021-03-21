@@ -1,7 +1,7 @@
-﻿using Utils.Security;
+﻿using MG.Utils.Security;
 using Xunit;
 
-namespace Utils.Test.Security
+namespace MG.Utils.Test.Security
 {
     public class HashStringTest
     {

@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WebHost.Infrastructure.Infrastructure
+namespace MG.WebHost.Infrastructure.Infrastructure
 {
     public abstract class AppInitializeServiceBase : IHostedService
     {

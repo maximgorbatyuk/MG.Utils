@@ -1,8 +1,8 @@
 ﻿using System.Text;
+using MG.Utils.ValueObjects;
 using Microsoft.IdentityModel.Tokens;
-using Utils.ValueObjects;
 
-namespace WebHost.Infrastructure.Jwt
+namespace MG.WebHost.Infrastructure.Jwt
 {
     public class JwtSecretKey : SymmetricSecurityKey
     {

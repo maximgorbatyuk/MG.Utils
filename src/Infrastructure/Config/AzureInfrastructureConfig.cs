@@ -1,12 +1,12 @@
 ﻿using HealthChecks.Network.Core;
+using MG.WebHost.Infrastructure.Azure.BlobStorage;
+using MG.WebHost.Infrastructure.Emails;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
-using WebHost.Infrastructure.Azure.BlobStorage;
-using WebHost.Infrastructure.Emails;
 
-namespace WebHost.Infrastructure.Config
+namespace MG.WebHost.Infrastructure.Config
 {
     public static class AzureInfrastructureConfig
     {

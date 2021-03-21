@@ -1,8 +1,8 @@
-﻿using Utils.Exceptions;
-using Utils.Security;
+﻿using MG.Utils.Exceptions;
+using MG.Utils.Security;
 using Xunit;
 
-namespace Utils.Test.Security
+namespace MG.Utils.Test.Security
 {
     public class ComplexityScoreTest
     {

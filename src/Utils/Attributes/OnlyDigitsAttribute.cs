@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Utils.Attributes
+namespace MG.Utils.Attributes
 {
     public class OnlyDigitsAttribute : RegularExpressionAttribute
     {

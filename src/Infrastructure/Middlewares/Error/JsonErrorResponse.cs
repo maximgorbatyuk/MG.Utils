@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
+using MG.Utils.Serialization;
 using Microsoft.AspNetCore.Http;
-using Utils.Serialization;
 
-namespace WebHost.Infrastructure.Middlewares.Error
+namespace MG.WebHost.Infrastructure.Middlewares.Error
 {
     internal class JsonErrorResponse<T>
     {

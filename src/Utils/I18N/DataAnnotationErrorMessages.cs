@@ -1,4 +1,4 @@
-﻿namespace Utils.I18N
+﻿namespace MG.Utils.I18N
 {
     public static class DataAnnotationErrorMessages
     {

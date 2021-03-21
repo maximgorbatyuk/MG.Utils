@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MG.WebHost.Infrastructure.I18N.Contracts;
 using Microsoft.Extensions.Localization;
-using WebHost.Infrastructure.I18N.Contracts;
 
-namespace WebHost.Infrastructure.I18N
+namespace MG.WebHost.Infrastructure.I18N
 {
     public class JsonFileLocalizer : IStringLocalizer
     {

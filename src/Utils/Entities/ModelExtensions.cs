@@ -1,7 +1,7 @@
 ﻿using System;
-using Utils.Interfaces;
+using MG.Utils.Interfaces;
 
-namespace Utils.Entities
+namespace MG.Utils.Entities
 {
     public static class ModelExtensions
     {

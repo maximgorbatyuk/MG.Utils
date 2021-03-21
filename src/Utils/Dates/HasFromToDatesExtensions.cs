@@ -1,8 +1,8 @@
 ﻿using System;
-using Utils.Exceptions;
-using Utils.Interfaces;
+using MG.Utils.Exceptions;
+using MG.Utils.Interfaces;
 
-namespace Utils.Dates
+namespace MG.Utils.Dates
 {
     public static class HasFromToDatesExtensions
     {

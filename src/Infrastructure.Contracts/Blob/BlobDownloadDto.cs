@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Azure.Storage.Blobs.Models;
 
-namespace WebHost.Infrastructure.Contracts.Blob
+namespace MG.WebHost.Infrastructure.Contracts.Blob
 {
     public class BlobDownloadDto
     {

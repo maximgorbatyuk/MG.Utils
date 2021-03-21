@@ -1,12 +1,12 @@
 ﻿using System;
-using Utils.Dates;
-using Utils.Exceptions;
-using Utils.Helpers;
-using Utils.Interfaces;
-using Utils.Validators;
+using MG.Utils.Dates;
+using MG.Utils.Exceptions;
+using MG.Utils.Helpers;
+using MG.Utils.Interfaces;
+using MG.Utils.Validators;
 using Xunit;
 
-namespace Utils.Test.Validators
+namespace MG.Utils.Test.Validators
 {
     public class EntityValidatorExtensionsTest
     {

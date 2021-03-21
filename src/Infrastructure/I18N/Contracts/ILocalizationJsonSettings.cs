@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
-using Utils.I18N;
+using MG.Utils.I18N;
 
-namespace WebHost.Infrastructure.I18N.Contracts
+namespace MG.WebHost.Infrastructure.I18N.Contracts
 {
     public interface ILocalizationJsonSettings
     {

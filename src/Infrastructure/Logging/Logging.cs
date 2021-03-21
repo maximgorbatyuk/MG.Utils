@@ -1,13 +1,13 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MG.Utils.Helpers;
+using MG.Utils.ValueObjects;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.ApplicationInsights;
-using Utils.Helpers;
-using Utils.ValueObjects;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
-namespace WebHost.Infrastructure.Logging
+namespace MG.WebHost.Infrastructure.Logging
 {
     public class Logging
     {

@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Utils.Exceptions;
-using Utils.I18N;
-using Utils.Validators;
+using MG.Utils.Exceptions;
+using MG.Utils.I18N;
+using MG.Utils.Validators;
 using Xunit;
 
-namespace Utils.Test
+namespace MG.Utils.Test
 {
     public class EntityValidatorTest
     {

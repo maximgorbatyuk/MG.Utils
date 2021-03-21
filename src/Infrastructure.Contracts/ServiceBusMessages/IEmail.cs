@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace WebHost.Infrastructure.Contracts.ServiceBusMessages
+namespace MG.WebHost.Infrastructure.Contracts.ServiceBusMessages
 {
     public interface IEmail
     {

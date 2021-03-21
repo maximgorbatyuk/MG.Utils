@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Security.Cryptography;
-using Utils.Helpers;
+using MG.Utils.Helpers;
 
-namespace Utils.Security
+namespace MG.Utils.Security
 {
     public record HashedString
     {

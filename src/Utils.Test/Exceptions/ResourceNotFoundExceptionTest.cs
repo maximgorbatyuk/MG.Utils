@@ -1,7 +1,7 @@
-﻿using Utils.Exceptions;
+﻿using MG.Utils.Exceptions;
 using Xunit;
 
-namespace Utils.Test.Exceptions
+namespace MG.Utils.Test.Exceptions
 {
     public class ResourceNotFoundExceptionTest
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Http;
 
-namespace Utils.ValueObjects
+namespace MG.Utils.AspNetCore
 {
     public record RandomFileName
     {

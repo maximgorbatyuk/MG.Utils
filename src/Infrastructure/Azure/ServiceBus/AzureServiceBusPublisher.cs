@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
 using Azure.Messaging.ServiceBus;
+using MG.Utils.Helpers;
+using MG.WebHost.Infrastructure.Contracts.MessageBroker;
+using MG.WebHost.Infrastructure.Infrastructure.MessageBrokers;
 using Microsoft.Extensions.Logging;
-using Utils.Helpers;
-using WebHost.Infrastructure.Contracts.MessageBroker;
-using WebHost.Infrastructure.Infrastructure.MessageBrokers;
 
-namespace WebHost.Infrastructure.Azure.ServiceBus
+namespace MG.WebHost.Infrastructure.Azure.ServiceBus
 {
     public class AzureServiceBusPublisher : BrokerPublisherBase
     {

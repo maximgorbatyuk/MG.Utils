@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Utils.Helpers
+namespace MG.Utils.Helpers
 {
     public class Constants : IReadOnlyCollection<FieldInfo>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Utils.Pagination
+namespace MG.Utils.Pagination
 {
     // TODO Maxim: rename to Paginated
     public record Pageable<T> : PaginatedListBase

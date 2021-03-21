@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace WebHost.Infrastructure.Middlewares
+namespace MG.WebHost.Infrastructure.Middlewares
 {
     public class LoggingMiddleware
     {

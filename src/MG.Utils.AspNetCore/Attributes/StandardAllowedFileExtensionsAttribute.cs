@@ -1,4 +1,4 @@
-﻿namespace Utils.Attributes
+﻿namespace MG.Utils.AspNetCore.Attributes
 {
     public class StandardAllowedFileExtensionsAttribute : AllowedExtensionsAttribute
     {

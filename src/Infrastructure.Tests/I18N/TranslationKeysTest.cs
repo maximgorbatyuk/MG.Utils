@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Utils.I18N;
-using WebHost.Infrastructure.I18N;
+using MG.Utils.I18N;
+using MG.WebHost.Infrastructure.I18N;
 using Xunit;
 
-namespace WebHost.Infrastructure.Tests.I18N
+namespace MG.WebHost.Infrastructure.Tests.I18N
 {
     public class TranslationKeysTest
     {

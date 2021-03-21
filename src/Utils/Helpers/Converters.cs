@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Utils.Helpers
+namespace MG.Utils.Helpers
 {
     public static class Converters
     {

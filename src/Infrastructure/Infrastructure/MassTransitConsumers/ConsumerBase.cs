@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 using MassTransit;
+using MG.WebHost.Infrastructure.Contracts;
 using Microsoft.Extensions.Logging;
-using WebHost.Infrastructure.Contracts;
 
-namespace WebHost.Infrastructure.Infrastructure.MassTransitConsumers
+namespace MG.WebHost.Infrastructure.Infrastructure.MassTransitConsumers
 {
     public abstract class ConsumerBase<T> : IConsumer<T>
         where T : class

@@ -9,7 +9,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
-namespace WebHost.Infrastructure.Config
+namespace MG.WebHost.Infrastructure.Config
 {
     public static class SwaggerConfig
     {

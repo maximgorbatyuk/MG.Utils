@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Utils.Exceptions
+namespace MG.Utils.Exceptions
 {
     /// <summary>
     /// Bad Request exception. Means that the client has sent the invalid request.

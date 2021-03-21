@@ -1,4 +1,4 @@
-﻿namespace Utils.Dates
+﻿namespace MG.Utils.Dates
 {
     public enum Month
     {

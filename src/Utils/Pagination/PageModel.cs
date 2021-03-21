@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Utils.Pagination
+namespace MG.Utils.Pagination
 {
     public record PageModel
     {

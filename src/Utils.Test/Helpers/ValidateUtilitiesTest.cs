@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Utils.Dates;
-using Utils.Helpers;
+using MG.Utils.Dates;
+using MG.Utils.Helpers;
 using Xunit;
 
-namespace Utils.Test.Helpers
+namespace MG.Utils.Test.Helpers
 {
     public class ValidateUtilitiesTest
     {

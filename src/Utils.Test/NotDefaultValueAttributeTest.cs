@@ -1,9 +1,8 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-using Utils.Attributes;
+using MG.Utils.Attributes;
 using Xunit;
 
-namespace Utils.Test
+namespace MG.Utils.Test
 {
     public class NotDefaultValueAttributeTest
     {

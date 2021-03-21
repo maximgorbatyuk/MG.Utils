@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
+using MG.Utils.AspNetCore.Validation;
+using MG.Utils.I18N;
 using Microsoft.AspNetCore.Http;
-using Utils.I18N;
 
-namespace Utils.Attributes
+namespace MG.Utils.AspNetCore.Attributes
 {
     // copied from https://stackoverflow.com/questions/56588900/how-to-validate-uploaded-file-in-asp-net-core
     public class AllowedExtensionsAttribute : ValidationAttribute

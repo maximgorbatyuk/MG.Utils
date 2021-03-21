@@ -1,9 +1,9 @@
-﻿using Utils.Attributes;
-using Utils.Exceptions;
-using Utils.Validators;
+﻿using MG.Utils.Attributes;
+using MG.Utils.Exceptions;
+using MG.Utils.Validators;
 using Xunit;
 
-namespace Utils.Test.Attributes
+namespace MG.Utils.Test.Attributes
 {
     public class ValidEmailAttributeTest
     {

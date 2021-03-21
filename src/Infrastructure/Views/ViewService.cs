@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using MG.WebHost.Infrastructure.Contracts.Infrastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
@@ -10,9 +11,8 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Routing;
-using WebHost.Infrastructure.Contracts.Infrastructure;
 
-namespace WebHost.Infrastructure.Views
+namespace MG.WebHost.Infrastructure.Views
 {
     // was copied from https://gist.github.com/ahmad-moussawi/1643d703c11699a6a4046e57247b4d09
     public class ViewService : IView

@@ -1,8 +1,8 @@
 ﻿using System;
-using Utils.Helpers;
-using Utils.Random;
+using MG.Utils.Helpers;
+using MG.Utils.Random;
 
-namespace Utils.Security
+namespace MG.Utils.Security
 {
     public record UserPasswordHash
     {

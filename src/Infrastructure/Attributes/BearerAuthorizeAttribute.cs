@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 
-namespace WebHost.Infrastructure.Attributes
+namespace MG.WebHost.Infrastructure.Attributes
 {
     public class BearerAuthorizeAttribute : AuthorizeAttribute
     {

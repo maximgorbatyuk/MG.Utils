@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace WebHost.Infrastructure.Contracts
+namespace MG.WebHost.Infrastructure.Contracts
 {
     public static class EventIdFactory
     {

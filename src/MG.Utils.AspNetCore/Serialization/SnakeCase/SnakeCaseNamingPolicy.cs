@@ -1,7 +1,6 @@
 ﻿using System.Text.Json;
-using Utils.Serialization;
 
-namespace Utils.Helpers
+namespace MG.Utils.AspNetCore.Serialization.SnakeCase
 {
     public class SnakeCaseNamingPolicy : JsonNamingPolicy
     {

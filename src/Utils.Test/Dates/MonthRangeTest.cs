@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Utils.Dates;
-using Utils.Helpers;
+using MG.Utils.Dates;
 using Xunit;
 
-namespace Utils.Test.Dates
+namespace MG.Utils.Test.Dates
 {
     public class MonthRangeTest
     {

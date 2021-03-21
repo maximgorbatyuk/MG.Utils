@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using MassTransit;
+using MG.WebHost.Infrastructure.Contracts.ServiceBusMessages;
 using Microsoft.Extensions.Logging;
-using WebHost.Infrastructure.Contracts.ServiceBusMessages;
 
-namespace WebHost.Infrastructure.Infrastructure.MassTransitConsumers
+namespace MG.WebHost.Infrastructure.Infrastructure.MassTransitConsumers
 {
     public class MassTransitEmailSendConsumer : ConsumerBase<EmailMessage>
     {

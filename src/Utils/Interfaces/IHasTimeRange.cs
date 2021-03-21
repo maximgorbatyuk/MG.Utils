@@ -1,6 +1,6 @@
-﻿using Utils.Dates;
+﻿using MG.Utils.Dates;
 
-namespace Utils.Interfaces
+namespace MG.Utils.Interfaces
 {
     public interface IHasTimeRange : IHasFromToDates
     {

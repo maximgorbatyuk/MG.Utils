@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Coravel.Invocable;
 using Microsoft.Extensions.Logging;
 
-namespace WebHost.Infrastructure.Contracts.ScheduleJobs
+namespace MG.WebHost.Infrastructure.Contracts.ScheduleJobs
 {
     public abstract class InvocableJobBase : IInvocable
     {

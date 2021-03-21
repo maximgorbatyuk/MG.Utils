@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using MG.Utils.ValueObjects;
 using Microsoft.IdentityModel.Tokens;
-using Utils.ValueObjects;
 
-namespace WebHost.Infrastructure.Jwt
+namespace MG.WebHost.Infrastructure.Jwt
 {
     // https://www.c-sharpcorner.com/article/how-to-use-jwt-authentication-with-web-api/
     public class JwtToken

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 
-namespace Utils.Attributes
+namespace MG.Utils.AspNetCore.Validation
 {
 #nullable enable
     public static class ValidationContextExtensions

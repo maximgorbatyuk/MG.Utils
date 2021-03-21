@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MG.Utils.ValueObjects;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Utils.ValueObjects;
 
-namespace WebHost.Infrastructure.Config
+namespace MG.WebHost.Infrastructure.Config
 {
     public static class RedisConfig
     {

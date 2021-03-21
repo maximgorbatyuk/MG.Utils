@@ -15,16 +15,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
+	  <PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.0" />
+	  <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="ClosedXML" Version="0.95.4" />
     <PackageReference Include="Coravel" Version="4.0.2" />
     <PackageReference Include="Microsoft.Identity.Client" Version="4.25.0" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.8.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Utils\Utils.csproj" />
   </ItemGroup>
 
 </Project>

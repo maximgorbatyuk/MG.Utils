@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Utils.Interfaces;
+using MG.Utils.Interfaces;
 
-namespace Utils.Entities
+namespace MG.Utils.Entities
 {
     public class BaseModel : IBaseModel
     {

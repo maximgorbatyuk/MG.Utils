@@ -1,4 +1,4 @@
-﻿namespace Utils.Attributes
+﻿namespace MG.Utils.Attributes
 {
     public class BinOrIinNumber : OnlyDigitsAttribute
     {

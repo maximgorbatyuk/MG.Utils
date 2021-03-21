@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using Utils.Attributes;
-using Utils.Helpers;
+using MG.Utils.Attributes;
+using MG.Utils.Helpers;
 
-namespace WebHost.Infrastructure.Contracts.ServiceBusMessages
+namespace MG.WebHost.Infrastructure.Contracts.ServiceBusMessages
 {
     public class EmailMessage
     {

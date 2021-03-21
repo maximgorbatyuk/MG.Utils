@@ -1,8 +1,8 @@
 ﻿using System;
-using Utils.Dates;
+using MG.Utils.Dates;
 using Xunit;
 
-namespace Utils.Test.Dates
+namespace MG.Utils.Test.Dates
 {
     public class DateTest
     {

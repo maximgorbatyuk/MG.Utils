@@ -1,7 +1,7 @@
 ﻿using System;
-using Utils.Helpers;
+using MG.Utils.Helpers;
 
-namespace Utils.ValueObjects
+namespace MG.Utils.ValueObjects
 {
     public record NonNullableInt
     {

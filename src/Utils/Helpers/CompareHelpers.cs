@@ -1,7 +1,7 @@
 ﻿using System;
-using Utils.Dates;
+using MG.Utils.Dates;
 
-namespace Utils.Helpers
+namespace MG.Utils.Helpers
 {
     public static class CompareHelpers
     {

@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Linq;
-using Utils.Helpers;
-using Utils.Interfaces;
+using MG.Utils.Helpers;
+using MG.Utils.Interfaces;
 
-namespace Utils.Dates
+namespace MG.Utils.Dates
 {
     /// <summary>
     /// THe class represents Date within the system.

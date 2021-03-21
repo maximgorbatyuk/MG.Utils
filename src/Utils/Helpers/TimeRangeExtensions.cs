@@ -1,9 +1,9 @@
 ﻿using System;
-using Utils.Dates;
-using Utils.Exceptions;
-using Utils.Interfaces;
+using MG.Utils.Dates;
+using MG.Utils.Exceptions;
+using MG.Utils.Interfaces;
 
-namespace Utils.Helpers
+namespace MG.Utils.Helpers
 {
     public static class TimeRangeExtensions
     {

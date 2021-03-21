@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using Utils.Helpers;
+using MG.Utils.Helpers;
 
-namespace Utils.ValueObjects
+namespace MG.Utils.ValueObjects
 {
     public record Sha256String
     {

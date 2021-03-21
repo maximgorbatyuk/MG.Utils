@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Utils.ValueObjects
+﻿namespace MG.Utils.ValueObjects
 {
     public record Long
     {

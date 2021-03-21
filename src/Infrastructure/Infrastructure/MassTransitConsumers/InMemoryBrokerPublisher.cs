@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using MassTransit;
+using MG.WebHost.Infrastructure.Infrastructure.MessageBrokers;
 using Microsoft.Extensions.Logging;
-using WebHost.Infrastructure.Infrastructure.MessageBrokers;
 
-namespace WebHost.Infrastructure.Infrastructure.MassTransitConsumers
+namespace MG.WebHost.Infrastructure.Infrastructure.MassTransitConsumers
 {
     public class InMemoryBrokerPublisher : BrokerPublisherBase
     {

@@ -1,13 +1,13 @@
 ﻿using System.Globalization;
 using System.Linq;
+using MG.WebHost.Infrastructure.I18N;
+using MG.WebHost.Infrastructure.I18N.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
-using WebHost.Infrastructure.I18N;
-using WebHost.Infrastructure.I18N.Contracts;
 
-namespace WebHost.Infrastructure.Config
+namespace MG.WebHost.Infrastructure.Config
 {
     public static class LocalizationConfig
     {

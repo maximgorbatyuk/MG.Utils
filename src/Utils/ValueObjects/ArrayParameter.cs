@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Utils.ValueObjects
+namespace MG.Utils.ValueObjects
 {
     public class ArrayParameter : IReadOnlyCollection<long>
     {

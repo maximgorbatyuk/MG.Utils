@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using Utils.Pagination;
 
-namespace Utils.Helpers
+namespace MG.Utils.Helpers
 {
     // https://habr.com/ru/post/313394/
     public static class ExpressionExtensions
