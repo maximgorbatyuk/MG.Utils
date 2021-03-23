@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>MaximGorbatyuk.Utils.Azure.ServiceBus</id>
+    <version>1.0.0</version>
+    <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
+    <authors>@maximgorbatyuk</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
+    <description>Useful classes for cut your routine</description>
+    <releaseNotes>Release notes.</releaseNotes>
+    <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+    <tags></tags>
+	  <dependencies>
+		  <dependency id="Azure.Messaging.ServiceBus" version="7.1.1" />
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.2" />
+		  <dependency id="AspNetCore.HealthChecks.AzureServiceBus" version="5.0.2" />
+		  <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" />
+		  <dependency id="Microsoft.Extensions.Configuration.Binder" version="5.0.0" />
+		  <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="5.0.0" />
+		  <dependency id="Microsoft.Extensions.Diagnostics.HealthChecks" version="5.0.4" />
+		  <dependency id="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" version="5.0.4" />
+	  </dependencies>
+  </metadata>
+	
+</package>
