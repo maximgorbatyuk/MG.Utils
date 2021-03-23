@@ -1,5 +1,5 @@
 ﻿using System;
-using MG.Utils.Dates;
+using MG.Utils.Abstract.Dates;
 using MG.Utils.Helpers;
 using Xunit;
 

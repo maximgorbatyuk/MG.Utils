@@ -1,7 +1,7 @@
 ﻿using System;
 using MG.Utils.Abstract;
+using MG.Utils.Abstract.NonNullableObjects;
 using MG.Utils.Abstract.Random;
-using MG.Utils.Helpers;
 
 namespace MG.Utils.Security
 {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using MG.Utils.Abstract;
 using MG.Utils.Helpers;
 
 namespace MG.Utils.I18N

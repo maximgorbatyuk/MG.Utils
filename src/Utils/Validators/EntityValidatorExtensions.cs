@@ -1,8 +1,8 @@
 ﻿using System;
-using MG.Utils.Dates;
+using MG.Utils.Abstract;
+using MG.Utils.Abstract.Dates;
+using MG.Utils.Abstract.Dates.Interfaces;
 using MG.Utils.Exceptions;
-using MG.Utils.Helpers;
-using MG.Utils.Interfaces;
 
 namespace MG.Utils.Validators
 {

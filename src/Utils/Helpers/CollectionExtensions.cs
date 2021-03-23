@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MG.Utils.Abstract;
+using MG.Utils.Entities;
 using MG.Utils.Exceptions;
-using MG.Utils.Interfaces;
 
 namespace MG.Utils.Helpers
 {

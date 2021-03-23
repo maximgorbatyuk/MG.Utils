@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MG.Utils.Dates;
+using MG.Utils.Abstract;
+using MG.Utils.Abstract.Dates;
 using MG.Utils.Helpers;
 using Xunit;
 

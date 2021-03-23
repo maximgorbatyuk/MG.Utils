@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MG.Utils.Abstract;
 
 namespace MG.Utils.Helpers
 {

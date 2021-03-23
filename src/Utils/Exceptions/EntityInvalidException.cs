@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract;
 
 namespace MG.Utils.Exceptions
 {
