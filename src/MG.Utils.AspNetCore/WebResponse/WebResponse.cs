@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Net.Http;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract;
 
 namespace MG.Utils.AspNetCore.WebResponse
 {

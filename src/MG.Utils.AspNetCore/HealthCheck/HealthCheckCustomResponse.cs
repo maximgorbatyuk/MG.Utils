@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace MG.WebHost.Infrastructure.Healthcheck
+namespace MG.Utils.AspNetCore.HealthCheck
 {
     public class HealthCheckCustomResponse : HealthCheckOptions
     {

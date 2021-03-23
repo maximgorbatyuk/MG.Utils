@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -19,14 +19,9 @@
 
 	<ItemGroup>
 		<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.2" />
-		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
-		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.2.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
-		<PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="5.0.4" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+		<PackageReference Include="MailKit" Version="2.10.1" />
 	</ItemGroup>
 
 </Project>

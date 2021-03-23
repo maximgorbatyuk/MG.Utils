@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using iText.Html2pdf;
 using iText.Kernel.Pdf;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract;
 
 namespace MG.WebHost.Infrastructure.PdfServices
 {

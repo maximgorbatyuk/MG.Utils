@@ -1,7 +1,7 @@
-﻿using MG.Utils.ValueObjects;
+﻿using MG.Utils.Abstract.NonNullableObjects;
 using Microsoft.Extensions.Configuration;
 
-namespace MG.WebHost.Infrastructure.Emails
+namespace MG.Utils.Smtp
 {
     public record SmtpEmailSettings
     {

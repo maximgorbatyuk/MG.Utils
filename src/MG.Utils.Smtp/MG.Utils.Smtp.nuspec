@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+	  <id>MaximGorbatyuk.Utils.Smtp</id>
+	  <version>1.0.0</version>
+	  <title>MaximGorbatyuk.Utils.Smtp - useful classes for cut your routine</title>
+	  <authors>@maximgorbatyuk</authors>
+	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	  <license type="expression">MIT</license>
+	  <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
+	  <description>Useful classes for cut your routine with ASP.Net core</description>
+	  <releaseNotes>First release.</releaseNotes>
+	  <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+	  <tags></tags>
+	  <dependencies>
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.2" />
+		  <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="5.0.0" />
+		  <dependency id="Microsoft.Extensions.Logging.Abstractions" version="5.0.0" />
+		  <dependency id="MailKit" version="2.10.1" />
+	  </dependencies>
+  </metadata>
+</package>

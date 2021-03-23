@@ -1,6 +1,5 @@
 ﻿using MassTransit;
 using MG.Utils.Abstract.NonNullableObjects;
-using MG.WebHost.Infrastructure.Azure.ServiceBus;
 using MG.WebHost.Infrastructure.Contracts.MessageBroker;
 using MG.WebHost.Infrastructure.Infrastructure.MassTransitConsumers;
 using Microsoft.Extensions.Configuration;

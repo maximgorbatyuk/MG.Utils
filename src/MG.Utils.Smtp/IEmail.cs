@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace MG.WebHost.Infrastructure.Contracts.ServiceBusMessages
+namespace MG.Utils.Smtp
 {
     public interface IEmail
     {

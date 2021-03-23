@@ -1,11 +1,10 @@
 ﻿using System.Threading.Tasks;
-using MailKit.Net.Smtp;
+using MG.Utils.Abstract;
 using MG.Utils.Helpers;
 using MG.Utils.Validators;
-using MG.WebHost.Infrastructure.Contracts.ServiceBusMessages;
 using MimeKit;
 
-namespace MG.WebHost.Infrastructure.Emails
+namespace MG.Utils.Smtp
 {
     public class MailboxSmtpProvider : IEmail
     {
@@ -42,7 +41,7 @@ namespace MG.WebHost.Infrastructure.Emails
                 Text = message.Body
             };
 
-            using var client = new SmtpClient
+            using var client = new MailKit.Net.Smtp.SmtpClient
             {
                 ServerCertificateValidationCallback = (s, c, h, e) => true
             };

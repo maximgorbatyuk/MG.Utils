@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using MG.Utils.Attributes;
+using MG.Utils.Abstract;
 using MG.Utils.Helpers;
 
-namespace MG.WebHost.Infrastructure.Contracts.ServiceBusMessages
+namespace MG.Utils.Smtp
 {
     public class EmailMessage
     {
@@ -65,7 +65,6 @@ namespace MG.WebHost.Infrastructure.Contracts.ServiceBusMessages
         [Required]
         public string Body { get; set; }
 
-        [CollectionNotEmpty]
         public ICollection<string> To { get; set; }
 
         public ICollection<string> Cc { get; set; }

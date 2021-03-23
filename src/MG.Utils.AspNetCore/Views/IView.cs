@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace MG.WebHost.Infrastructure.Contracts.Infrastructure
+namespace MG.Utils.AspNetCore.Views
 {
     public interface IView
     {

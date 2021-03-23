@@ -1,4 +1,4 @@
-﻿using MG.Utils.Helpers;
+﻿using MG.Utils.Abstract;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 

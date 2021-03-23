@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Blob", "MG.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.ServiceBus", "MG.Utils.Azure.ServiceBus\MG.Utils.Azure.ServiceBus.csproj", "{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Smtp", "MG.Utils.Smtp\MG.Utils.Smtp.csproj", "{234D531D-1EBB-4186-9327-CFCF48C5B8E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,10 @@ Global
 		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234D531D-1EBB-4186-9327-CFCF48C5B8E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234D531D-1EBB-4186-9327-CFCF48C5B8E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234D531D-1EBB-4186-9327-CFCF48C5B8E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234D531D-1EBB-4186-9327-CFCF48C5B8E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

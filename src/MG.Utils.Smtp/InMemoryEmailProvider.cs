@@ -1,9 +1,8 @@
 ﻿using System.Threading.Tasks;
 using MG.Utils.Helpers;
-using MG.WebHost.Infrastructure.Contracts.ServiceBusMessages;
 using Microsoft.Extensions.Logging;
 
-namespace MG.WebHost.Infrastructure.Emails
+namespace MG.Utils.Smtp
 {
     public class InMemoryEmailProvider : IEmail
     {
