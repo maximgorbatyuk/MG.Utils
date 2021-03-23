@@ -2,6 +2,9 @@
 
 namespace MG.Utils.Abstract.Dates.Interfaces
 {
+    /// <summary>
+    /// This interfaces is able to be used for your Domain models.
+    /// </summary>
     public interface IHasDates
     {
         DateTimeOffset CreatedAt { get; }
