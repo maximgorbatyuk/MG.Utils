@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MG.Utils.AspNetCore.Serialization.SnakeCase;
 using Microsoft.AspNetCore.Mvc;
-using Utils.Serialization;
 
-namespace WebHost.Infrastructure.Middlewares.Error
+namespace MG.WebHost.Infrastructure.Middlewares.Error
 {
     public class ValidationProblemDetailsResult : IActionResult
     {

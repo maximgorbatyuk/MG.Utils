@@ -3,15 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{AB6BA374-1583-4B0A-81AA-DA30B81A0323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils", "Utils\MG.Utils.csproj", "{AB6BA374-1583-4B0A-81AA-DA30B81A0323}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHost.Infrastructure", "Infrastructure\WebHost.Infrastructure.csproj", "{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.WebHost.Infrastructure", "Infrastructure\MG.WebHost.Infrastructure.csproj", "{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHost.Infrastructure.Contracts", "Infrastructure.Contracts\WebHost.Infrastructure.Contracts.csproj", "{10C1EB75-E5C9-4BBC-AF4B-5E83BCEB879F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.WebHost.Infrastructure.Contracts", "Infrastructure.Contracts\MG.WebHost.Infrastructure.Contracts.csproj", "{10C1EB75-E5C9-4BBC-AF4B-5E83BCEB879F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils.Test", "Utils.Test\Utils.Test.csproj", "{96B0A082-0672-457A-B55E-BD28891BD2B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Test", "Utils.Test\MG.Utils.Test.csproj", "{96B0A082-0672-457A-B55E-BD28891BD2B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHost.Infrastructure.Tests", "Infrastructure.Tests\WebHost.Infrastructure.Tests.csproj", "{678E56C3-CB58-4AE2-9AEB-BF326DA2CDDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.WebHost.Infrastructure.Tests", "Infrastructure.Tests\MG.WebHost.Infrastructure.Tests.csproj", "{678E56C3-CB58-4AE2-9AEB-BF326DA2CDDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore", "MG.Utils.AspNetCore\MG.Utils.AspNetCore.csproj", "{4ECF4166-94F3-45BE-BAE4-971467CC00C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{086E9E78-4458-43F1-B0B7-B395DDF56BA8}"
+	ProjectSection(SolutionItems) = preProject
+		NuGetPackDependencies.ps1 = NuGetPackDependencies.ps1
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Abstract", "MG.NoNullableClasses\MG.Utils.Abstract.csproj", "{2B6F9686-A8BB-4988-A2E7-EAA299D0C058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Abstract.Test", "MG.Utils.Abstract.Test\MG.Utils.Abstract.Test.csproj", "{4BEFBA8E-86AD-4237-88AC-CA799EA01198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +50,18 @@ Global
 		{678E56C3-CB58-4AE2-9AEB-BF326DA2CDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678E56C3-CB58-4AE2-9AEB-BF326DA2CDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678E56C3-CB58-4AE2-9AEB-BF326DA2CDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECF4166-94F3-45BE-BAE4-971467CC00C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECF4166-94F3-45BE-BAE4-971467CC00C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECF4166-94F3-45BE-BAE4-971467CC00C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECF4166-94F3-45BE-BAE4-971467CC00C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B6F9686-A8BB-4988-A2E7-EAA299D0C058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B6F9686-A8BB-4988-A2E7-EAA299D0C058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B6F9686-A8BB-4988-A2E7-EAA299D0C058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B6F9686-A8BB-4988-A2E7-EAA299D0C058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BEFBA8E-86AD-4237-88AC-CA799EA01198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEFBA8E-86AD-4237-88AC-CA799EA01198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEFBA8E-86AD-4237-88AC-CA799EA01198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEFBA8E-86AD-4237-88AC-CA799EA01198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

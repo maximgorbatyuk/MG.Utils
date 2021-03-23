@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net;
+using MG.Utils.Helpers;
 using Microsoft.AspNetCore.Mvc;
-using Utils.Helpers;
 
-namespace WebHost.Infrastructure.Middlewares.Error
+namespace MG.WebHost.Infrastructure.Middlewares.Error
 {
     public class ValidationProblemDetails : ProblemDetails
     {

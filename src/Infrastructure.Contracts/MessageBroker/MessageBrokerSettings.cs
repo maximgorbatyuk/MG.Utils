@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
-using Utils.ValueObjects;
+﻿using MG.Utils.ValueObjects;
+using Microsoft.Extensions.Configuration;
 
-namespace WebHost.Infrastructure.Contracts.MessageBroker
+namespace MG.WebHost.Infrastructure.Contracts.MessageBroker
 {
     public class MessageBrokerSettings
     {

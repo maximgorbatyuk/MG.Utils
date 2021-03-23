@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Azure.Storage.Blobs;
+using MG.Utils.ValueObjects;
 using Microsoft.Extensions.Configuration;
-using Utils.ValueObjects;
 
-namespace WebHost.Infrastructure.Azure.BlobStorage
+namespace MG.WebHost.Infrastructure.Azure.BlobStorage
 {
     public class BlobStorageSettings
     {

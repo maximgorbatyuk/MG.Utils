@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
 
-namespace WebHost.Infrastructure.Attributes
+namespace MG.WebHost.Infrastructure.Attributes
 {
     public class AzureAuthorizeAttribute : AuthorizeAttribute
     {

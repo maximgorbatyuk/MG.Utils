@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Utils.Exceptions;
-using Utils.Interfaces;
+using MG.Utils.Abstract;
+using MG.Utils.Entities;
+using MG.Utils.Exceptions;
 
-namespace Utils.Helpers
+namespace MG.Utils.Helpers
 {
     public static class CollectionExtensions
     {

@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 
-namespace WebHost.Infrastructure.Infrastructure
+namespace MG.WebHost.Infrastructure.Infrastructure
 {
     // https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice#implementing-ihostedservice-with-a-custom-hosted-service-class-deriving-from-the-backgroundservice-base-class
     public abstract class BackgroundServiceBase : IHostedService, IDisposable

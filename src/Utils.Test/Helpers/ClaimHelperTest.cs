@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Security.Claims;
-using Utils.Helpers;
+using MG.Utils.Helpers;
 using Xunit;
 
-namespace Utils.Test.Helpers
+namespace MG.Utils.Test.Helpers
 {
     public class ClaimHelperTest
     {

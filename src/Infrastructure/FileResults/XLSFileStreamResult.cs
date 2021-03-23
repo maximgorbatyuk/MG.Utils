@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebHost.Infrastructure.FileResults
+namespace MG.WebHost.Infrastructure.FileResults
 {
     public class XLSFileStreamResult : FileStreamResult
     {

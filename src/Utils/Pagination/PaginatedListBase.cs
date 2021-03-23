@@ -1,4 +1,4 @@
-﻿namespace Utils.Pagination
+﻿namespace MG.Utils.Pagination
 {
     public abstract record PaginatedListBase
     {

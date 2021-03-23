@@ -5,11 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MG.Utils.I18N;
+using MG.WebHost.Infrastructure.I18N.Contracts;
 using Microsoft.Extensions.Logging;
-using Utils.I18N;
-using WebHost.Infrastructure.I18N.Contracts;
 
-namespace WebHost.Infrastructure.I18N
+namespace MG.WebHost.Infrastructure.I18N
 {
     public class LocalizationJsonSettings : ILocalizationJsonSettings
     {

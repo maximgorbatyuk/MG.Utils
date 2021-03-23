@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Utils.Helpers;
+using MG.Utils.Abstract;
 
-namespace Utils.Exceptions
+namespace MG.Utils.Exceptions
 {
     public class EntityInvalidException : BadRequestException
     {

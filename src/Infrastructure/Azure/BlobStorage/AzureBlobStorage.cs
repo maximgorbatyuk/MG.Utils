@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Azure;
 using Azure.Storage.Blobs.Models;
-using WebHost.Infrastructure.Contracts.Blob;
+using MG.WebHost.Infrastructure.Contracts.Blob;
 
-namespace WebHost.Infrastructure.Azure.BlobStorage
+namespace MG.WebHost.Infrastructure.Azure.BlobStorage
 {
     // https://github.com/Azure/azure-sdk-for-net/blob/Azure.Storage.Blobs_12.8.0/sdk/storage/Azure.Storage.Blobs/README.md
     // https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet

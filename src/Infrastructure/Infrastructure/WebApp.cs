@@ -1,9 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MG.Utils.ValueObjects;
+using MG.WebHost.Infrastructure.Contracts.Infrastructure;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Utils.ValueObjects;
-using WebHost.Infrastructure.Contracts.Infrastructure;
 
-namespace WebHost.Infrastructure.Infrastructure
+namespace MG.WebHost.Infrastructure.Infrastructure
 {
     public class WebApp : IWebApp
     {

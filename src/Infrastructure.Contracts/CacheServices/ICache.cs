@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace WebHost.Infrastructure.Contracts.CacheServices
+namespace MG.WebHost.Infrastructure.Contracts.CacheServices
 {
     public interface ICache
     {

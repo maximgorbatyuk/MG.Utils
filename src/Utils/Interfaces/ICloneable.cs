@@ -1,4 +1,4 @@
-﻿namespace Utils.Interfaces
+﻿namespace MG.Utils.Interfaces
 {
     public interface ICloneable<out T>
     {

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Security.Authentication;
 using System.Threading.Tasks;
+using MG.Utils.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Localization;
-using Utils.Exceptions;
 
-namespace WebHost.Infrastructure.Middlewares.Error
+namespace MG.WebHost.Infrastructure.Middlewares.Error
 {
     public class ExceptionHandlerMiddleware
     {

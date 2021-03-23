@@ -1,10 +1,10 @@
 ﻿using System;
-using Utils.Dates;
-using Utils.Exceptions;
-using Utils.Helpers;
-using Utils.Interfaces;
+using MG.Utils.Abstract;
+using MG.Utils.Abstract.Dates;
+using MG.Utils.Abstract.Dates.Interfaces;
+using MG.Utils.Exceptions;
 
-namespace Utils.Validators
+namespace MG.Utils.Validators
 {
     public static class EntityValidatorExtensions
     {

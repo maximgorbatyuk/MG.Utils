@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Company>@maximgorbatyuk</Company>
+    <Copyright>Copyright © @maximgorbatyuk</Copyright>
+    <RepositoryUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</PackageProjectUrl>
+    <PackageLicenseFile></PackageLicenseFile>
+    <Description>Useful utilities for the different app projects</Description>
+    <Product>Web app utils</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>,1573,1591,1712,NU5128,NU5118</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

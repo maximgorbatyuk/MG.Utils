@@ -1,4 +1,4 @@
-﻿namespace WebHost.Infrastructure.Contracts.Infrastructure
+﻿namespace MG.WebHost.Infrastructure.Contracts.Infrastructure
 {
     public interface IWebApp
     {

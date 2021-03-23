@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using MG.Utils.ValueObjects;
+using MG.WebHost.Infrastructure.Jwt;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Identity.Web;
 using Microsoft.IdentityModel.Tokens;
-using Utils.ValueObjects;
-using WebHost.Infrastructure.Jwt;
 
-namespace WebHost.Infrastructure.Config
+namespace MG.WebHost.Infrastructure.Config
 {
     public abstract class AuthenticationConfig
     {

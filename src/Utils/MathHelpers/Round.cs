@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Utils.MathHelpers
+namespace MG.Utils.MathHelpers
 {
     public record Round
     {

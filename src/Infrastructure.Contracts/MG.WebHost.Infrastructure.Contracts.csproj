@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Copyright>Copyright © @maximgorbatyuk</Copyright>
+    <Company>@maximgorbatyuk</Company>
+    <PackageProjectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</RepositoryUrl>
+    <RepositoryType>public</RepositoryType>
+    <PackageLicenseFile></PackageLicenseFile>
+    <Product>Contract classes and interfaces for your WebHost app</Product>
+    <Description />
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.0" />
+	  <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+    <PackageReference Include="Coravel" Version="4.0.2" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.25.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.8.0" />
+  </ItemGroup>
+
+</Project>

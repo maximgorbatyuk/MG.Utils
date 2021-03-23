@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebHost.Infrastructure.Contracts.Authentication
+namespace MG.WebHost.Infrastructure.Contracts.Authentication
 {
     public readonly struct Jwt
     {

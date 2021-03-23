@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace WebHost.Infrastructure.Contracts.MessageBroker
+namespace MG.WebHost.Infrastructure.Contracts.MessageBroker
 {
     public interface IMessageBroker
     {

@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Utils.AsyncUtils
+namespace MG.Utils.AsyncUtils
 {
     public class AsyncOperationAsSync
     {

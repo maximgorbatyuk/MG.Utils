@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
 using MailKit.Net.Smtp;
+using MG.Utils.Helpers;
+using MG.Utils.Validators;
+using MG.WebHost.Infrastructure.Contracts.ServiceBusMessages;
 using MimeKit;
-using Utils.Helpers;
-using Utils.Validators;
-using WebHost.Infrastructure.Contracts.ServiceBusMessages;
 
-namespace WebHost.Infrastructure.Emails
+namespace MG.WebHost.Infrastructure.Emails
 {
     public class MailboxSmtpProvider : IEmail
     {

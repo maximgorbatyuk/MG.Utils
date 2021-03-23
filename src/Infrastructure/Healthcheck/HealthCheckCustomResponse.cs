@@ -1,12 +1,12 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using MG.Utils.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using Utils.Helpers;
 
-namespace WebHost.Infrastructure.Healthcheck
+namespace MG.WebHost.Infrastructure.Healthcheck
 {
     public class HealthCheckCustomResponse : HealthCheckOptions
     {

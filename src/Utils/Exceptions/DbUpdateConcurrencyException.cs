@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Utils.Exceptions
+namespace MG.Utils.Exceptions
 {
     public class DbUpdateConcurrencyException : InvalidOperationException
     {

@@ -1,7 +1,9 @@
-﻿using Utils.Security;
+﻿using MG.Utils.Abstract;
+using MG.Utils.Abstract.NonNullableObjects;
+using MG.Utils.Security;
 using Xunit;
 
-namespace Utils.Test.Security
+namespace MG.Utils.Test.Security
 {
     public class UserPasswordTest
     {

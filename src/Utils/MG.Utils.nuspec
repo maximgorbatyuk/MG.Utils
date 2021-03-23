@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>MaximGorbatyuk.Utils</id>
+    <version>1.0.1</version>
+    <title>MG.Utils - useful classes for cut your routine</title>
+    <authors>@maximgorbatyuk</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</projectUrl>
+    <description>Useful classes for cut your routine</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+    <tags></tags>
+	  <dependencies>
+		  <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.0" />
+	  </dependencies>
+  </metadata>
+	
+</package>

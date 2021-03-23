@@ -1,1 +1,1 @@
-nuget spec Utils.csproj
+nuget spec

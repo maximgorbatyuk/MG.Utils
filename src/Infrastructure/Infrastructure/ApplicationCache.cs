@@ -2,11 +2,11 @@
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using MG.Utils.Helpers;
+using MG.WebHost.Infrastructure.Contracts.CacheServices;
 using Microsoft.Extensions.Caching.Distributed;
-using Utils.Helpers;
-using WebHost.Infrastructure.Contracts.CacheServices;
 
-namespace WebHost.Infrastructure.Infrastructure
+namespace MG.WebHost.Infrastructure.Infrastructure
 {
     public class ApplicationCache : ICache
     {

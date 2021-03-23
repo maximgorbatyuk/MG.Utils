@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using MG.WebHost.Infrastructure.Middlewares.Error;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using WebHost.Infrastructure.Middlewares.Error;
 
-namespace WebHost.Infrastructure.Middlewares
+namespace MG.WebHost.Infrastructure.Middlewares
 {
     public static class MiddlewareExtensions
     {

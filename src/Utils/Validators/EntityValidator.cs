@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
-using Utils.Exceptions;
-using Utils.Helpers;
+using MG.Utils.Abstract;
+using MG.Utils.Exceptions;
 
-namespace Utils.Validators
+namespace MG.Utils.Validators
 {
     public class EntityValidator<T>
     {

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using MG.Utils.Abstract;
 
-namespace Utils.Helpers
+namespace MG.Utils.Helpers
 {
     public static class Converters
     {

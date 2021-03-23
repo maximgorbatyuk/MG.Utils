@@ -1,6 +1,6 @@
-﻿using Utils.Helpers;
+﻿using MG.Utils.Helpers;
 
-namespace WebHost.Infrastructure.Middlewares.Error
+namespace MG.WebHost.Infrastructure.Middlewares.Error
 {
     public record ValidationError
     {

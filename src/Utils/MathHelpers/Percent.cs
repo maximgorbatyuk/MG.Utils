@@ -1,7 +1,7 @@
 ﻿using System;
-using Utils.Helpers;
+using MG.Utils.Helpers;
 
-namespace Utils.MathHelpers
+namespace MG.Utils.MathHelpers
 {
     public record Percent
     {

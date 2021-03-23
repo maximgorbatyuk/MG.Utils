@@ -1,8 +1,8 @@
 ﻿using System;
-using Utils.MathHelpers;
+using MG.Utils.MathHelpers;
 using Xunit;
 
-namespace Utils.Test.Math
+namespace MG.Utils.Test.Math
 {
     public class PercentTest
     {

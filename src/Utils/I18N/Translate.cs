@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Globalization;
-using Utils.Helpers;
+using MG.Utils.Abstract;
+using MG.Utils.Helpers;
 
-namespace Utils.I18N
+namespace MG.Utils.I18N
 {
     public record Translate
     {

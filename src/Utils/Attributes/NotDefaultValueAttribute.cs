@@ -1,8 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Utils.I18N;
+using MG.Utils.I18N;
 
-namespace Utils.Attributes
+namespace MG.Utils.Attributes
 {
     /// <summary>
     /// Checks that the property contains not-default value. Returns true if the property is not value type of.
@@ -18,11 +18,6 @@ namespace Utils.Attributes
                 return ValidationResult.Success;
             }
 
-            string ErrorAccessor()
-            {
-                return validationContext.ErrorMessageWithDisplayName(ErrorMessage ?? DataAnnotationErrorMessages.NotDefaultValue);
-            }
-
             var type = value.GetType();
             switch (type.IsValueType)
             {
@@ -31,7 +26,7 @@ namespace Utils.Attributes
                     var defaultValue = Activator.CreateInstance(type);
                     return !value.Equals(defaultValue)
                         ? ValidationResult.Success
-                        : new ValidationResult(ErrorAccessor());
+                        : new ValidationResult(ErrorMessage ?? DataAnnotationErrorMessages.NotDefaultValue);
                 }
 
                 default:

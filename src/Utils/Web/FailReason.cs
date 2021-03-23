@@ -1,4 +1,4 @@
-﻿namespace Utils.Web
+﻿namespace MG.Utils.Web
 {
     public enum FailReason
     {

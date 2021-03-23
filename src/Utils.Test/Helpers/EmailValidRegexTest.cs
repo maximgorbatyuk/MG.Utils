@@ -1,7 +1,7 @@
-﻿using Utils.Helpers;
+﻿using MG.Utils.Helpers;
 using Xunit;
 
-namespace Utils.Test.Helpers
+namespace MG.Utils.Test.Helpers
 {
     public class EmailValidRegexTest
     {

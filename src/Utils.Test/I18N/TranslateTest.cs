@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Globalization;
-using Utils.I18N;
+using MG.Utils.I18N;
 using Xunit;
 
-namespace Utils.Test.I18N
+namespace MG.Utils.Test.I18N
 {
     public class TranslateTest
     {

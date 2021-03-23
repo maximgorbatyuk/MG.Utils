@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Utils.Helpers;
-using Utils.I18N;
+using MG.Utils.Helpers;
+using MG.Utils.I18N;
 
-namespace WebHost.Infrastructure.I18N
+namespace MG.WebHost.Infrastructure.I18N
 {
     public class TranslationKeys
     {

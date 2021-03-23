@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using MG.Utils.I18N;
+using MG.WebHost.Infrastructure.I18N;
+using MG.WebHost.Infrastructure.I18N.Contracts;
 using Moq;
-using Utils.I18N;
-using WebHost.Infrastructure.I18N;
-using WebHost.Infrastructure.I18N.Contracts;
 using Xunit;
 
-namespace WebHost.Infrastructure.Tests.I18N
+namespace MG.WebHost.Infrastructure.Tests.I18N
 {
     public class JsonFileLocalizerTest
     {

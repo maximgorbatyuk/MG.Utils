@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Utils.Helpers;
-using Utils.I18N;
+using MG.Utils.Helpers;
+using MG.Utils.I18N;
 
-namespace Utils.Attributes
+namespace MG.Utils.Attributes
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class ValidEmailAttribute : ValidationAttribute
@@ -20,14 +20,12 @@ namespace Utils.Attributes
 
             if (value is not string valueString)
             {
-                return new ValidationResult(validationContext
-                    .ErrorMessageWithDisplayName(ErrorMessage ?? DataAnnotationErrorMessages.InvalidEmail));
+                return new ValidationResult(ErrorMessage ?? DataAnnotationErrorMessages.InvalidEmail);
             }
 
             return _emailRegex.IsValid(valueString)
                 ? ValidationResult.Success
-                : new ValidationResult(validationContext
-                    .ErrorMessageWithDisplayName(ErrorMessage ?? DataAnnotationErrorMessages.InvalidEmail));
+                : new ValidationResult(ErrorMessage ?? DataAnnotationErrorMessages.InvalidEmail);
         }
     }
 }

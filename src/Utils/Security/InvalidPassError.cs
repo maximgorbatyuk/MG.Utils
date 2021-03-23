@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Utils.Exceptions;
+using MG.Utils.Exceptions;
 
-namespace Utils.Security
+namespace MG.Utils.Security
 {
     internal class InvalidPassError
     {
