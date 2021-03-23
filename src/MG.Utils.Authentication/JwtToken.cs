@@ -4,7 +4,7 @@ using System.Security.Claims;
 using MG.Utils.Abstract.NonNullableObjects;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MG.WebHost.Infrastructure.Jwt
+namespace MG.Utils.Authentication
 {
     // https://www.c-sharpcorner.com/article/how-to-use-jwt-authentication-with-web-api/
     public class JwtToken
@@ -12,29 +12,38 @@ namespace MG.WebHost.Infrastructure.Jwt
         private readonly JwtSecretKey _secret;
         private readonly ClaimsIdentity _user;
         private readonly int _expireAfterDays;
+        private readonly NonNullableString _issuer;
+        private readonly NonNullableString _audience;
 
-        private readonly Lazy<Contracts.Authentication.Jwt> _jwt;
+        private readonly Lazy<Jwt> _jwt;
 
-        public JwtToken(NonNullableString secretKey, ClaimsIdentity user, int expireAfterDays = 1)
+        public JwtToken(
+            NonNullableString secretKey,
+            ClaimsIdentity user,
+            NonNullableString issuer,
+            NonNullableString audience,
+            int expireAfterDays = 1)
         {
             _user = user;
+            _issuer = issuer;
+            _audience = audience;
             _expireAfterDays = expireAfterDays;
             _secret = new JwtSecretKey(secretKey);
 
-            _jwt = new Lazy<Contracts.Authentication.Jwt>(AsJwtInternal);
+            _jwt = new Lazy<Jwt>(AsJwtInternal);
         }
 
-        public Contracts.Authentication.Jwt Get() => _jwt.Value;
+        public Jwt Get() => _jwt.Value;
 
-        private Contracts.Authentication.Jwt AsJwtInternal()
+        private Jwt AsJwtInternal()
         {
             var handler = new JwtSecurityTokenHandler();
 
             var expiresAt = DateTime.Now.AddDays(_expireAfterDays);
 
             JwtSecurityToken token = handler.CreateJwtSecurityToken(
-                issuer: "CT",
-                audience: "users",
+                issuer: _issuer,
+                audience: _audience,
                 subject: _user,
                 expires: expiresAt,
                 issuedAt: DateTime.Now,
@@ -43,10 +52,10 @@ namespace MG.WebHost.Infrastructure.Jwt
                     algorithm: SecurityAlgorithms.HmacSha256Signature));
 
             string apiToken = handler.WriteToken(token);
-            return new Contracts.Authentication.Jwt(apiToken, expiresAt);
+            return new Jwt(apiToken, expiresAt);
         }
 
-        public static implicit operator Contracts.Authentication.Jwt(JwtToken token)
+        public static implicit operator Jwt(JwtToken token)
         {
             return token!.Get();
         }

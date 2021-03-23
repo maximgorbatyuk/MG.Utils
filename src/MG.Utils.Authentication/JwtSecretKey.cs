@@ -2,7 +2,7 @@
 using MG.Utils.Abstract.NonNullableObjects;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MG.WebHost.Infrastructure.Jwt
+namespace MG.Utils.Authentication
 {
     public class JwtSecretKey : SymmetricSecurityKey
     {
