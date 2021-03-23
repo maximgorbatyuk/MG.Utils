@@ -1,4 +1,5 @@
-﻿using MG.Utils.ValueObjects;
+﻿using MG.Utils.Abstract.NonNullableObjects;
+using MG.Utils.ValueObjects;
 using MG.WebHost.Infrastructure.Jwt;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;

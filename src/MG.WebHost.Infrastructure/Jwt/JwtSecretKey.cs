@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using MG.Utils.ValueObjects;
+using MG.Utils.Abstract.NonNullableObjects;
 using Microsoft.IdentityModel.Tokens;
 
 namespace MG.WebHost.Infrastructure.Jwt

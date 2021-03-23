@@ -51,8 +51,4 @@
     <ProjectReference Include="..\MG.Utils.AspNetCore\MG.Utils.AspNetCore.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Azure\" />
-  </ItemGroup>
-
 </Project>

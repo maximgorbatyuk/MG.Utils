@@ -7,7 +7,7 @@ namespace MG.Utils.AspNetCore.Serialization.SnakeCase
     public static class JsonSerializationExtensions
     {
         private static readonly SnakeCaseNamingStrategy _snakeCaseNamingStrategy
-            = new SnakeCaseNamingStrategy();
+            = new ();
 
         private static readonly JsonSerializerSettings _snakeCaseSettings = new JsonSerializerSettings
         {
