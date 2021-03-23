@@ -1,8 +1,7 @@
 ﻿using System;
-using MG.Utils.ValueObjects;
 using Xunit;
 
-namespace MG.Utils.Test.ValueObjects
+namespace MG.Utils.Abstract.Test
 {
     public class NonNullableTest
     {

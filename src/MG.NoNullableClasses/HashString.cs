@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Security.Cryptography;
-using MG.Utils.Helpers;
-using MG.Utils.Random;
+using MG.Utils.Abstract.Random;
 
-namespace MG.Utils.Security
+namespace MG.Utils.Abstract
 {
     public record HashString
     {
         public static HashString Random(int length = 24)
         {
-            return new HashString((string)new RandomString(
+            return new ((string)new RandomString(
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", length));
         }
 
@@ -22,8 +21,7 @@ namespace MG.Utils.Security
 
         public HashString(string source)
         {
-            source.ThrowIfNull(nameof(source));
-            _source = source;
+            _source = source ?? throw new ArgumentNullException(nameof(source));
         }
 
         public string Value

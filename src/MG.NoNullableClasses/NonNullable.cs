@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MG.Utils.ValueObjects
+namespace MG.Utils.Abstract
 {
     public record NonNullable<T>
         where T : class

@@ -1,4 +1,4 @@
-﻿namespace MG.Utils.Random
+﻿namespace MG.Utils.Abstract.Random
 {
     public record RandomString : RandomStringBase
     {

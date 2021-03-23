@@ -1,4 +1,5 @@
-﻿using MG.Utils.Security;
+﻿using MG.Utils.Abstract;
+using MG.Utils.Security;
 using Xunit;
 
 namespace MG.Utils.Test.Security

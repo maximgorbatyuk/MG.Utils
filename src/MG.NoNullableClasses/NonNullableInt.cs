@@ -1,7 +1,6 @@
 ﻿using System;
-using MG.Utils.Helpers;
 
-namespace MG.Utils.ValueObjects
+namespace MG.Utils.Abstract
 {
     public record NonNullableInt
     {
@@ -14,15 +13,13 @@ namespace MG.Utils.ValueObjects
         /// <param name="source">Source.</param>
         public NonNullableInt(string source)
         {
-            _source = source;
+            _source = source ?? throw new ArgumentNullException(nameof(source));
         }
 
         public int ToInt()
         {
             if (_value == null)
             {
-                _source.ThrowIfNull(nameof(_source));
-
                 if (int.TryParse(_source, out var result))
                 {
                     _value = result;

@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using MG.Utils.Serialization;
+using MG.Utils.AspNetCore.Serialization.SnakeCase;
 using Microsoft.AspNetCore.Http;
 
 namespace MG.WebHost.Infrastructure.Middlewares.Error

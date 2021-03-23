@@ -1,15 +1,18 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using MG.Utils.Helpers;
 
-namespace MG.Utils.ValueObjects
+namespace MG.Utils.Abstract
 {
     public record Sha256String
     {
         public Sha256String(string value)
         {
-            value.ThrowIfNull(nameof(value));
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
 
             using var hashstring = new SHA256Managed();
 

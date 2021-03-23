@@ -1,4 +1,4 @@
-﻿namespace MG.Utils.ValueObjects
+﻿namespace MG.Utils.Abstract
 {
     public record Bool
     {

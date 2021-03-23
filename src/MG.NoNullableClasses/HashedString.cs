@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Security.Cryptography;
-using MG.Utils.Helpers;
 
-namespace MG.Utils.Security
+namespace MG.Utils.Abstract
 {
     public record HashedString
     {
@@ -11,8 +10,7 @@ namespace MG.Utils.Security
 
         public HashedString(string hashedString)
         {
-            hashedString.ThrowIfNull(nameof(hashedString));
-            _hashedString = hashedString;
+            _hashedString = hashedString ?? throw new ArgumentNullException(nameof(hashedString));
         }
 
         public bool Same(string anotherPassword)

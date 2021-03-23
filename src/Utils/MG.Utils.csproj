@@ -17,4 +17,8 @@
     <NoWarn>,1573,1591,1712,NU5128,NU5118</NoWarn>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MG.NoNullableClasses\MG.Utils.Abstract.csproj" />
+  </ItemGroup>
+
 </Project>
