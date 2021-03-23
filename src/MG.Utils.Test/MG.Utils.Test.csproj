@@ -5,8 +5,8 @@
     <LangVersion>latest</LangVersion>
     <IsPackable>false</IsPackable>
     <Company>@maximgorbatyuk</Company>
-    <PackageProjectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/maximgorbatyuk/MG.Utils</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maximgorbatyuk/MG.Utils</RepositoryUrl>
     <PackageLicenseFile></PackageLicenseFile>
     <Copyright>Copyright © @maximgorbatyuk</Copyright>
     <Description>Unit tests for the Utils project</Description>
@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Utils\MG.Utils.csproj" />
+    <ProjectReference Include="..\MG.Utils\MG.Utils.csproj" />
   </ItemGroup>
 
   <ItemGroup>

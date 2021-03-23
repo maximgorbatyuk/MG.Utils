@@ -5,8 +5,8 @@
     <LangVersion>latest</LangVersion>
     <Copyright>Copyright © @maximgorbatyuk</Copyright>
     <Company>@maximgorbatyuk</Company>
-    <PackageProjectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/maximgorbatyuk/MG.Utils</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maximgorbatyuk/MG.Utils</RepositoryUrl>
     <RepositoryType>public</RepositoryType>
     <PackageLicenseFile></PackageLicenseFile>
     <Product>Contract classes and interfaces for your WebHost app</Product>

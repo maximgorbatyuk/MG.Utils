@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Net.Http;
-using MG.Utils.Abstract;
+using MG.Utils.Helpers;
 
-namespace MG.Utils.Web
+namespace MG.Utils.AspNetCore.WebResponse
 {
     public class WebResponse<T>
     {

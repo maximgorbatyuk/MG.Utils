@@ -1,4 +1,4 @@
-﻿namespace MG.Utils.Web
+﻿namespace MG.Utils.AspNetCore.WebResponse
 {
     public enum FailReason
     {

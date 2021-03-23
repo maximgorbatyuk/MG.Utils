@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using MG.Utils.I18N;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MG.Utils.Attributes
 {
@@ -8,7 +8,7 @@ namespace MG.Utils.Attributes
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class UnlikeAttribute : ValidationAttribute
     {
-        public string OtherProperty { get; private set; }
+        public string OtherProperty { get; }
 
         public UnlikeAttribute(string otherProperty)
         {
@@ -20,9 +20,14 @@ namespace MG.Utils.Attributes
             OtherProperty = otherProperty;
         }
 
-        public override string FormatErrorMessage(string name)
+        public sealed override string FormatErrorMessage(string name)
         {
             return string.Format(ErrorMessageString, name, OtherProperty);
+        }
+
+        protected virtual string FormatError([NotNull] ValidationContext validationContext)
+        {
+            return ErrorMessage ?? $"The property value should not be equal to {OtherProperty}'s value";
         }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
@@ -32,18 +37,13 @@ namespace MG.Utils.Attributes
                 return ValidationResult.Success;
             }
 
-            string ErrorAccessor()
-            {
-                return string.Format(ErrorMessage ?? DataAnnotationErrorMessages.UnlikeError, validationContext.DisplayName, OtherProperty);
-            }
-
             var otherProperty = validationContext.ObjectInstance.GetType()
                 .GetProperty(OtherProperty);
 
             var otherPropertyValue = otherProperty!.GetValue(validationContext.ObjectInstance, null);
 
             return value.Equals(otherPropertyValue)
-                ? new ValidationResult(ErrorAccessor())
+                ? new ValidationResult(FormatError(validationContext))
                 : ValidationResult.Success;
         }
     }

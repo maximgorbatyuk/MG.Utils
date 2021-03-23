@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <RepositoryUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</RepositoryUrl>
+    <RepositoryUrl>https://github.com/maximgorbatyuk/MG.Utils</RepositoryUrl>
     <RepositoryType>public</RepositoryType>
-    <PackageProjectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/maximgorbatyuk/MG.Utils</PackageProjectUrl>
     <PackageLicenseFile></PackageLicenseFile>
     <Company>@maximgorbatyuk</Company>
     <Copyright>Copyright © @maximgorbatyuk</Copyright>
@@ -47,7 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure.Contracts\MG.WebHost.Infrastructure.Contracts.csproj" />
+    <ProjectReference Include="..\MG.WebHost.Infrastructure.Contracts\MG.WebHost.Infrastructure.Contracts.csproj" />
     <ProjectReference Include="..\MG.Utils.AspNetCore\MG.Utils.AspNetCore.csproj" />
   </ItemGroup>
 

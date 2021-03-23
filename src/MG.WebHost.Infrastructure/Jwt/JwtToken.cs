@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using MG.Utils.Abstract.NonNullableObjects;
 using MG.Utils.ValueObjects;
 using Microsoft.IdentityModel.Tokens;
 

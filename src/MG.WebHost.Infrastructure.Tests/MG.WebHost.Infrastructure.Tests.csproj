@@ -2,21 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-
     <IsPackable>false</IsPackable>
-
     <Company>@maximgorbatyuk</Company>
-
     <Copyright>Copyright © @maximgorbatyuk</Copyright>
-
     <PackageLicenseFile></PackageLicenseFile>
-
-    <PackageProjectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</PackageProjectUrl>
-
-    <RepositoryUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</RepositoryUrl>
-
+    <PackageProjectUrl>https://github.com/maximgorbatyuk/MG.Utils</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/maximgorbatyuk/MG.Utils</RepositoryUrl>
     <Description />
-
     <Product />
 
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -37,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\MG.WebHost.Infrastructure.csproj" />
+    <ProjectReference Include="..\MG.WebHost.Infrastructure\MG.WebHost.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
-using MG.Utils.AspNetCore.Validation;
-using MG.Utils.I18N;
 using Microsoft.AspNetCore.Http;
 
 namespace MG.Utils.AspNetCore.Attributes
@@ -14,7 +13,7 @@ namespace MG.Utils.AspNetCore.Attributes
     {
         private readonly IReadOnlyCollection<string> _extensions;
 
-        public AllowedExtensionsAttribute(string[] extensions)
+        public AllowedExtensionsAttribute(IReadOnlyCollection<string> extensions)
         {
             _extensions = extensions;
         }
@@ -28,24 +27,32 @@ namespace MG.Utils.AspNetCore.Attributes
 
             if (value is IFormFile file)
             {
-                var extension = Path.GetExtension(file.FileName);
+                string extension = Path.GetExtension(file.FileName);
 
                 if (extension == null)
                 {
-                    return new ValidationResult(validationContext.ErrorMessageWithDisplayName(
-                        DataAnnotationErrorMessages.FileExtensionIsRequired));
+                    return new ValidationResult(FormatError(validationContext));
                 }
 
                 if (!_extensions.Contains(extension.ToLower()))
                 {
-                    return new ValidationResult(validationContext.ErrorMessageWithDisplayName(
-                        DataAnnotationErrorMessages.FileExtensionIsNotAllowed));
+                    return new ValidationResult(FormatError(validationContext));
                 }
 
                 return ValidationResult.Success;
             }
 
             throw new InvalidOperationException("You should use this attribute only for File properties");
+        }
+
+        public sealed override string FormatErrorMessage(string name)
+        {
+            return base.FormatErrorMessage(name);
+        }
+
+        protected virtual string FormatError([NotNull] ValidationContext validationContext)
+        {
+            return ErrorMessage ?? "The passed file has disallowed extension";
         }
     }
 }

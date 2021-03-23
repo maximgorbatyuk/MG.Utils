@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils.Abstract</id>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</projectUrl>
+    <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
     <description>Abstract classes and interfaces for the different app projects</description>
     <releaseNotes>First release.</releaseNotes>
     <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
