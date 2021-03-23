@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using MG.Utils.Helpers;
-using MG.Utils.I18N;
 
 namespace MG.Utils.Attributes
 {
@@ -9,6 +9,16 @@ namespace MG.Utils.Attributes
     public class ValidEmailAttribute : ValidationAttribute
     {
         private static readonly EmailValidRegex _emailRegex = new ();
+
+        public sealed override string FormatErrorMessage(string name)
+        {
+            return base.FormatErrorMessage(name);
+        }
+
+        protected virtual string FormatError([NotNull] ValidationContext validationContext)
+        {
+            return ErrorMessage ?? "Invalid email";
+        }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
@@ -20,12 +30,12 @@ namespace MG.Utils.Attributes
 
             if (value is not string valueString)
             {
-                return new ValidationResult(ErrorMessage ?? DataAnnotationErrorMessages.InvalidEmail);
+                return new ValidationResult(FormatError(validationContext));
             }
 
             return _emailRegex.IsValid(valueString)
                 ? ValidationResult.Success
-                : new ValidationResult(ErrorMessage ?? DataAnnotationErrorMessages.InvalidEmail);
+                : new ValidationResult(FormatError(validationContext));
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using MG.Utils.I18N;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MG.Utils.Attributes
 {
@@ -26,13 +26,23 @@ namespace MG.Utils.Attributes
                     var defaultValue = Activator.CreateInstance(type);
                     return !value.Equals(defaultValue)
                         ? ValidationResult.Success
-                        : new ValidationResult(ErrorMessage ?? DataAnnotationErrorMessages.NotDefaultValue);
+                        : new ValidationResult(FormatError(validationContext));
                 }
 
                 default:
                     // non-null ref type
                     return ValidationResult.Success;
             }
+        }
+
+        public sealed override string FormatErrorMessage(string name)
+        {
+            return base.FormatErrorMessage(name);
+        }
+
+        protected virtual string FormatError([NotNull] ValidationContext validationContext)
+        {
+            return ErrorMessage ?? "The property value equals to the default one";
         }
     }
 }

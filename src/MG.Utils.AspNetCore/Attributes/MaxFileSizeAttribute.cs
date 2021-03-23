@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using MG.Utils.AspNetCore.Validation;
-using MG.Utils.I18N;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Http;
 
 namespace MG.Utils.AspNetCore.Attributes
@@ -12,13 +11,14 @@ namespace MG.Utils.AspNetCore.Attributes
         private const int Kilo = 1024;
 
         // In bytes
-        private readonly int _maxFileSizeInBytes;
-        private readonly int _maxSizeInMegabytes;
+        protected int MaxFileSizeInBytes { get; }
+
+        protected int MaxSizeInMegabytes { get; }
 
         public MaxFileSizeAttribute(int megabytes)
         {
-            _maxSizeInMegabytes = megabytes;
-            _maxFileSizeInBytes = megabytes * Kilo * Kilo;
+            MaxSizeInMegabytes = megabytes;
+            MaxFileSizeInBytes = megabytes * Kilo * Kilo;
         }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
@@ -30,11 +30,21 @@ namespace MG.Utils.AspNetCore.Attributes
 
             return value switch
             {
-                IFormFile file => file.Length > _maxFileSizeInBytes
-                    ? new ValidationResult(validationContext.ErrorMessage(ErrorMessage ?? DataAnnotationErrorMessages.InvalidMaxFileSize, _maxSizeInMegabytes))
+                IFormFile file => file.Length > MaxFileSizeInBytes
+                    ? new ValidationResult(FormatError(validationContext))
                     : ValidationResult.Success,
                 _ => throw new InvalidOperationException("Use this attribute only for file properties")
             };
+        }
+
+        public sealed override string FormatErrorMessage(string name)
+        {
+            return base.FormatErrorMessage(name);
+        }
+
+        protected virtual string FormatError([NotNull] ValidationContext validationContext)
+        {
+            return ErrorMessage ?? "The file size is bigger than allowed one";
         }
     }
 }

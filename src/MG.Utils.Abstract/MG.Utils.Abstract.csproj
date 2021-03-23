@@ -5,8 +5,8 @@
 	  <LangVersion>latest</LangVersion>
 	  <Company>@maximgorbatyuk</Company>
 	  <Copyright>Copyright © @maximgorbatyuk</Copyright>
-	  <RepositoryUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</RepositoryUrl>
-	  <PackageProjectUrl>https://github.com/maximgorbatyuk/AzureAppRelatedUsefulFeatures</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/maximgorbatyuk/MG.Utils</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/maximgorbatyuk/MG.Utils</PackageProjectUrl>
 	  <PackageLicenseFile></PackageLicenseFile>
 	  <Description>Abstract classes and interfaces for the different app projects</Description>
 	  <Product>Web app utils</Product>

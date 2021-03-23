@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+	  <id>MaximGorbatyuk.Utils.AspNetCore</id>
+	  <version>1.0.0</version>
+	  <title>MaximGorbatyuk.Utils.AspNetCore - useful classes for cut your routine</title>
+	  <authors>@maximgorbatyuk</authors>
+	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	  <license type="expression">MIT</license>
+	  <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
+	  <description>Useful classes for cut your routine with ASP.Net core</description>
+	  <releaseNotes>First release.</releaseNotes>
+	  <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+	  <tags></tags>
+	  <dependencies>
+		  <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.0" />
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.1" />
+		  <dependency id="Microsoft.AspNetCore.Http" version="2.2.2" />
+		  <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" />
+		  <dependency id="Microsoft.Extensions.Localization.Abstractions" version="5.0.4" />
+		  <dependency id="Newtonsoft.Json" version="13.0.1" />
+	  </dependencies>
+  </metadata>
+</package>
