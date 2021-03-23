@@ -18,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.0" />
+    <PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.2" />
   </ItemGroup>
 
 </Project>

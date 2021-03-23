@@ -5,7 +5,7 @@ using Azure.Storage.Blobs;
 using MG.Utils.Abstract.NonNullableObjects;
 using Microsoft.Extensions.Configuration;
 
-namespace MG.WebHost.Infrastructure.Azure.BlobStorage
+namespace MG.Utils.Azure.Blob
 {
     public class BlobStorageSettings
     {

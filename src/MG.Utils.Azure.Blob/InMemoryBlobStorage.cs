@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using MG.Utils.Azure.Blob.Contracts;
 using MG.Utils.Exceptions;
-using MG.WebHost.Infrastructure.Contracts.Blob;
 
-namespace MG.WebHost.Infrastructure.Azure.BlobStorage
+namespace MG.Utils.Azure.Blob
 {
     public class InMemoryBlobStorage : IBlobStorage
     {
