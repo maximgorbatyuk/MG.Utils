@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Utils\MG.Utils.csproj" />
+    <ProjectReference Include="..\MG.Utils\MG.Utils.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MG.NoNullableClasses\MG.Utils.Abstract.csproj" />
+    <ProjectReference Include="..\MG.Utils.Abstract\MG.Utils.Abstract.csproj" />
   </ItemGroup>
 
 </Project>
