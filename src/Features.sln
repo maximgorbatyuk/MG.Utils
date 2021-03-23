@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{53C4538C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Blob", "MG.Utils.Azure.Blob\MG.Utils.Azure.Blob.csproj", "{7C077022-4095-4F33-BEDD-56E95A5953E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.ServiceBus", "MG.Utils.Azure.ServiceBus\MG.Utils.Azure.ServiceBus.csproj", "{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{7C077022-4095-4F33-BEDD-56E95A5953E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C077022-4095-4F33-BEDD-56E95A5953E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C077022-4095-4F33-BEDD-56E95A5953E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{678E56C3-CB58-4AE2-9AEB-BF326DA2CDDB} = {823B1C75-5EC0-41D9-921D-31AF26D254BA}
 		{4BEFBA8E-86AD-4237-88AC-CA799EA01198} = {823B1C75-5EC0-41D9-921D-31AF26D254BA}
 		{7C077022-4095-4F33-BEDD-56E95A5953E4} = {53C4538C-7E24-4F29-9431-9889B24175BD}
+		{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD} = {53C4538C-7E24-4F29-9431-9889B24175BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A7973A9-38DE-45D8-97FB-64A232B29588}

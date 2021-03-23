@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-
-namespace MG.WebHost.Infrastructure.Contracts.MessageBroker
+﻿namespace MG.Utils.Azure.ServiceBus.Constracts
 {
     public class MessageBrokerSettings
     {
