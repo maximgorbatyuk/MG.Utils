@@ -12,22 +12,22 @@ namespace MG.Utils.Dates
         /// <summary>
         /// Gets now.
         /// </summary>
-        public static Date Now => new Date(DateTimeOffset.Now);
+        public static Date Now => new (DateTimeOffset.Now);
 
         /// <summary>
         /// Gets tomorrow.
         /// </summary>
-        public static Date Tomorrow => new Date(new DateTimeOffset(DateTime.Today.AddDays(1)));
+        public static Date Tomorrow => new (new DateTimeOffset(DateTime.Today.AddDays(1)));
 
         /// <summary>
         /// Gets today.
         /// </summary>
-        public static Date Today => new Date(new DateTimeOffset(DateTime.Today));
+        public static Date Today => new (new DateTimeOffset(DateTime.Today));
 
         /// <summary>
         /// Gets yesterday.
         /// </summary>
-        public static Date Yesterday => new Date(new DateTimeOffset(DateTime.Today.AddDays(-1)));
+        public static Date Yesterday => new (new DateTimeOffset(DateTime.Today.AddDays(-1)));
 
         /// <summary>
         /// Gets month as int.
@@ -76,14 +76,14 @@ namespace MG.Utils.Dates
 
         public Date AddDays(int days)
         {
-            return new Date(Source.AddDays(days));
+            return new (Source.AddDays(days));
         }
 
         public Date AddWeeks(int weeks) => AddDays(weeks * 7);
 
         public Date SubtractDays(int days)
         {
-            return new Date(Source.AddDays(-1 * days));
+            return new (Source.AddDays(-1 * days));
         }
 
         public bool IsFirstDayOfMonth()
@@ -104,7 +104,7 @@ namespace MG.Utils.Dates
         // TODO Maxim: rename to Morning
         public DateTimeOffset StartOfTheDay()
         {
-            return new DateTimeOffset(
+            return new (
                 year: Source.Year,
                 month: Source.Month,
                 day: Source.Day,
@@ -117,7 +117,7 @@ namespace MG.Utils.Dates
         // TODO Maxim: rename to Evening
         public DateTimeOffset EndOfTheDay()
         {
-            return new DateTimeOffset(
+            return new (
                 year: Source.Year,
                 month: Source.Month,
                 day: Source.Day,
@@ -157,7 +157,7 @@ namespace MG.Utils.Dates
 
         public Date Clone()
         {
-            return new Date(Source);
+            return new (Source);
         }
 
         public bool Equals(Date other)
@@ -208,12 +208,12 @@ namespace MG.Utils.Dates
 
         public Date FirstDayOfMonth()
         {
-            return new Date(Year, Month, 1);
+            return new (Year, Month, 1);
         }
 
         public Date LastDayOfMonth()
         {
-            return new Date(Year, Month, DateTime.DaysInMonth(Year, Month));
+            return new (Year, Month, DateTime.DaysInMonth(Year, Month));
         }
     }
 }
