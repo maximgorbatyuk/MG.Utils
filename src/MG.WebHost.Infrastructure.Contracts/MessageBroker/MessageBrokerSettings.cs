@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MG.Utils.ValueObjects;
+using Microsoft.Extensions.Configuration;
 
 namespace MG.WebHost.Infrastructure.Contracts.MessageBroker
 {

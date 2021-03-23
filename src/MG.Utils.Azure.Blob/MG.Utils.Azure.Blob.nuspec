@@ -2,19 +2,20 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils.Azure.Blob</id>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
     <description>Useful classes for cut your routine</description>
-    <releaseNotes>First release.</releaseNotes>
+    <releaseNotes>Release notes.</releaseNotes>
     <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
     <tags></tags>
 	  <dependencies>
 		  <dependency id="MaximGorbatyuk.Utils" version="1.0.2" />
 		  <dependency id="Azure.Storage.Blobs" version="12.8.0" />
+		  <dependency id="AspNetCore.HealthChecks.AzureStorage" version="5.0.1" />
 		  <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" />
 		  <dependency id="Microsoft.Extensions.Configuration.Binder" version="5.0.0" />
 	  </dependencies>

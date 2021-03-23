@@ -1,4 +1,7 @@
-﻿namespace MG.Utils.Azure.ServiceBus.Constracts
+﻿using MG.Utils.Abstract.NonNullableObjects;
+using Microsoft.Extensions.Configuration;
+
+namespace MG.Utils.Azure.ServiceBus.Constracts
 {
     public class MessageBrokerSettings
     {

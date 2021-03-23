@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract;
 using MG.WebHost.Infrastructure.Contracts.MessageBroker;
 using Microsoft.Extensions.Logging;
 
