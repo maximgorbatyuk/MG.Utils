@@ -4,13 +4,13 @@ using iText.Html2pdf;
 using iText.Kernel.Pdf;
 using MG.Utils.Abstract;
 
-namespace MG.WebHost.Infrastructure.PdfServices
+namespace MG.Utils.Export.PdfServices
 {
-    public class PdfContent
+    public class HtmlToPdf
     {
         private readonly string _htmlContent;
 
-        public PdfContent(string htmlContent)
+        public HtmlToPdf(string htmlContent)
         {
             _htmlContent = htmlContent.ThrowIfNull(nameof(htmlContent));
         }
