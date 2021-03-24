@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MG.WebHost.Infrastructure.Infrastructure
+namespace MG.Utils.AspNetCore.HostedServices
 {
     public abstract class AppInitializeServiceBase : IHostedService
     {

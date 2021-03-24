@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 
-namespace MG.WebHost.Infrastructure.I18N
+namespace MG.Utils.AspNetCore.I18N
 {
     public class JsonFileLocalizeFactory : IStringLocalizerFactory
     {

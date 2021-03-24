@@ -1,6 +1,4 @@
 ﻿using System.Threading.Tasks;
-using MG.Utils.Abstract;
-using MG.WebHost.Infrastructure.Contracts.MessageBroker;
 using Microsoft.Extensions.Logging;
 
 namespace MG.WebHost.Infrastructure.Infrastructure.MessageBrokers

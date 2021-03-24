@@ -5,11 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MG.Utils.AspNetCore.I18N.Core;
 using MG.Utils.I18N;
-using MG.WebHost.Infrastructure.I18N.Contracts;
 using Microsoft.Extensions.Logging;
 
-namespace MG.WebHost.Infrastructure.I18N
+namespace MG.Utils.AspNetCore.I18N
 {
     public class LocalizationJsonSettings : ILocalizationJsonSettings
     {

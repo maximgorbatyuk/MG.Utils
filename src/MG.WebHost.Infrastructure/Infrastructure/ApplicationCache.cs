@@ -2,7 +2,7 @@
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract;
 using MG.WebHost.Infrastructure.Contracts.CacheServices;
 using Microsoft.Extensions.Caching.Distributed;
 

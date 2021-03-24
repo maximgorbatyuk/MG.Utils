@@ -1,5 +1,4 @@
-﻿using MG.Utils.ValueObjects;
-using MG.WebHost.Infrastructure.Contracts.Infrastructure;
+﻿using MG.Utils.Abstract.NonNullableObjects;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 

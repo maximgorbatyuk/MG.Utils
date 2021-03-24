@@ -4,7 +4,7 @@ using System.Linq;
 using MG.Utils.Helpers;
 using MG.Utils.I18N;
 
-namespace MG.WebHost.Infrastructure.I18N
+namespace MG.Utils.AspNetCore.I18N
 {
     public class TranslationKeys
     {

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+	  <id>MaximGorbatyuk.Utils.AspNetCore.I18N</id>
+	  <version>1.0.0</version>
+	  <title>MaximGorbatyuk.Utils.AspNetCore.I18N - useful classes for cut your routine</title>
+	  <authors>@maximgorbatyuk</authors>
+	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	  <license type="expression">MIT</license>
+	  <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
+	  <description>Useful classes for cut your routine with ASP.Net core</description>
+	  <releaseNotes>First release.</releaseNotes>
+	  <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+	  <tags></tags>
+	  <dependencies>
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.2" />
+		  <dependency id="Microsoft.AspNetCore.Localization" version="2.2.0" />
+		  <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" />
+		  <dependency id="Microsoft.AspNetCore.Mvc.DataAnnotations" version="2.2.0" />
+		  <dependency id="Microsoft.Extensions.DependencyInjection" version="5.0.1" />
+		  <dependency id="Microsoft.Extensions.Localization" version="5.0.4" />
+	  </dependencies>
+  </metadata>
+</package>

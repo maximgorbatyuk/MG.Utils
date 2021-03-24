@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MG.Utils.I18N;
 
-namespace MG.WebHost.Infrastructure.I18N.Contracts
+namespace MG.Utils.AspNetCore.I18N.Core
 {
     public interface ILocalizationJsonSettings
     {

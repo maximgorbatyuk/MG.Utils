@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MG.Utils.AspNetCore.Serialization.SnakeCase;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MG.WebHost.Infrastructure.Middlewares.Error

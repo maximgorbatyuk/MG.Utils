@@ -24,7 +24,7 @@ namespace MG.WebHost.Infrastructure.Logging
 
         private LogLevel LogLevel()
         {
-            return ((string)new NonNullableString(_config["Logging:LogLevel:Default"])).ToEnum<LogLevel>();
+            return new NonNullableString(_config["Logging:LogLevel:Default"]).ToString().ToEnum<LogLevel>();
         }
 
         public void Setup()

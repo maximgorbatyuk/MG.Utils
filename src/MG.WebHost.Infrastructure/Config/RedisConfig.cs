@@ -1,5 +1,4 @@
-﻿using MG.Utils.Abstract.NonNullableObjects;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MG.WebHost.Infrastructure.Config

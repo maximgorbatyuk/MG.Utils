@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using MassTransit;
-using MG.WebHost.Infrastructure.Contracts.ServiceBusMessages;
 using Microsoft.Extensions.Logging;
 
 namespace MG.WebHost.Infrastructure.Infrastructure.MassTransitConsumers

@@ -1,4 +1,5 @@
 ﻿using MG.Utils.Abstract.NonNullableObjects;
+using MG.Utils.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Extensions.Configuration;
@@ -12,7 +13,7 @@ namespace MG.WebHost.Infrastructure.Config
     {
         private readonly IServiceCollection _services;
 
-        public AuthenticationConfig(IServiceCollection services)
+        protected AuthenticationConfig(IServiceCollection services)
         {
             _services = services;
         }

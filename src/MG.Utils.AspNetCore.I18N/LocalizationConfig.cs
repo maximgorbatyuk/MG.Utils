@@ -1,22 +1,17 @@
-﻿using System.Globalization;
+﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
-using MG.WebHost.Infrastructure.I18N;
-using MG.WebHost.Infrastructure.I18N.Contracts;
+using MG.Utils.Abstract;
+using MG.Utils.AspNetCore.I18N.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 
-namespace MG.WebHost.Infrastructure.Config
+namespace MG.Utils.AspNetCore.I18N
 {
     public static class LocalizationConfig
     {
-        private static readonly CultureInfo[] _supportedCultures =
-        {
-            new ("en"),
-            new ("ru")
-        };
-
         public static IMvcBuilder AddCustomDataAnnotationsLocalization(this IMvcBuilder builder)
         {
             return builder
@@ -27,8 +22,11 @@ namespace MG.WebHost.Infrastructure.Config
                     });
         }
 
-        public static IServiceCollection AddI18N(this IServiceCollection services)
+        public static IServiceCollection AddI18N(
+            this IServiceCollection services, IList<CultureInfo> supportedCultures)
         {
+            supportedCultures.ThrowIfNullOrEmpty(nameof(supportedCultures));
+
             services.AddSingleton<ILocalizationJsonSettings, LocalizationJsonSettings>();
             services.AddTransient<IStringLocalizer, JsonFileLocalizer>();
             services.AddSingleton<IStringLocalizerFactory, JsonFileLocalizeFactory>();
@@ -41,9 +39,9 @@ namespace MG.WebHost.Infrastructure.Config
 
             services.Configure<RequestLocalizationOptions>(options =>
             {
-                options.DefaultRequestCulture = new RequestCulture(_supportedCultures.First().Name);
-                options.SupportedCultures = _supportedCultures;
-                options.SupportedUICultures = _supportedCultures;
+                options.DefaultRequestCulture = new RequestCulture(supportedCultures[0].Name);
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
                 options.FallBackToParentUICultures = true;
             });
 
