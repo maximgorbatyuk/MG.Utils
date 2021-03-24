@@ -7,40 +7,41 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Identity.Web;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MG.WebHost.Infrastructure.Config
+namespace MG.Utils.Azure.Authentication
 {
-    public abstract class AuthenticationConfig
+    public static class AuthenticationConfigExtensions
     {
-        private readonly IServiceCollection _services;
-
-        protected AuthenticationConfig(IServiceCollection services)
-        {
-            _services = services;
-        }
+        private const string DefaultDownstreamApi = "DownstreamApi";
+        private const string DefaultScope = "User.Read";
 
         // https://dotnetcorecentral.com/blog/authentication-handler-in-asp-net-core/
-        public AuthenticationConfig AzureActiveDirectorySso()
+        public static IServiceCollection AzureActiveDirectorySso(
+            this IServiceCollection services,
+            IConfigurationSection azureAdConfigSection,
+            NonNullableString downstreamApi = null,
+            NonNullableString scope = null)
         {
             // https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp
-            _services
+            services
                 .AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
-                .AddMicrosoftIdentityWebApp(AzureAdConfigSection())
+                .AddMicrosoftIdentityWebApp(azureAdConfigSection)
                 .EnableTokenAcquisitionToCallDownstreamApi()
-                .AddDownstreamWebApi("DownstreamApi", x =>
+                .AddDownstreamWebApi(downstreamApi ?? DefaultDownstreamApi, x =>
                 {
-                    x.Scopes = "User.Read";
+                    x.Scopes = scope ?? DefaultScope;
                 })
                 .AddDistributedTokenCaches();
 
-            return this;
+            return services;
         }
 
-        public AuthenticationConfig SelfBearer()
+        public static IServiceCollection AddSelfJwt(
+            this IServiceCollection services, NonNullableString jwtSecretKey)
         {
             // https://metanit.com/sharp/aspnet5/23.7.php
             // https://jasonwatmore.com/post/2019/10/14/aspnet-core-3-simple-api-for-authentication-registration-and-user-management
             // https://github.com/dotnet/aspnetcore/issues/4632#issuecomment-444967075
-            _services
+            services
                 .AddAuthentication(o =>
                 {
                     o.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -53,17 +54,13 @@ namespace MG.WebHost.Infrastructure.Config
                     x.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new JwtSecretKey(JwtSecretKey()),
+                        IssuerSigningKey = new JwtSecretKey(jwtSecretKey),
                         ValidateIssuer = false,
                         ValidateAudience = false
                     };
                 });
 
-            return this;
+            return services;
         }
-
-        protected abstract IConfigurationSection AzureAdConfigSection();
-
-        protected abstract NonNullableString JwtSecretKey();
     }
 }

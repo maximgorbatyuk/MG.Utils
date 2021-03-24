@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Logging", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.I18N.Tests", "MG.Utils.AspNetCore.I18N.Tests\MG.Utils.AspNetCore.I18N.Tests.csproj", "{056D0A00-5315-4F04-BAC7-E7A7D3418A68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Authentication", "MG.Utils.Azure.Authentication\MG.Utils.Azure.Authentication.csproj", "{C035E16B-22C7-42B7-803F-49971AFA9B41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +112,10 @@ Global
 		{056D0A00-5315-4F04-BAC7-E7A7D3418A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{056D0A00-5315-4F04-BAC7-E7A7D3418A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{056D0A00-5315-4F04-BAC7-E7A7D3418A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C035E16B-22C7-42B7-803F-49971AFA9B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C035E16B-22C7-42B7-803F-49971AFA9B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C035E16B-22C7-42B7-803F-49971AFA9B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C035E16B-22C7-42B7-803F-49971AFA9B41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +132,7 @@ Global
 		{463FA44C-4E15-4CE6-BA54-3131ADC812D1} = {77FF6165-CFAD-4155-B1C6-3B85B2C6695F}
 		{AF72AE76-3DE2-4CC3-AA92-0FF684276505} = {53C4538C-7E24-4F29-9431-9889B24175BD}
 		{056D0A00-5315-4F04-BAC7-E7A7D3418A68} = {823B1C75-5EC0-41D9-921D-31AF26D254BA}
+		{C035E16B-22C7-42B7-803F-49971AFA9B41} = {53C4538C-7E24-4F29-9431-9889B24175BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A7973A9-38DE-45D8-97FB-64A232B29588}

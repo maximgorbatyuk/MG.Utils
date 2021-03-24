@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>MaximGorbatyuk.Utils.Azure.Authentication</id>
+    <version>1.0.0</version>
+    <title>MaximGorbatyuk.Utils.Azure.Authentication - useful classes for cut your routine</title>
+    <authors>@maximgorbatyuk</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
+    <description>Useful classes for cut your routine</description>
+    <releaseNotes>Release notes.</releaseNotes>
+    <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+    <tags></tags>
+	  <dependencies>
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.2" />
+		  <dependency id="MaximGorbatyuk.Utils.Authentication" Version="1.0.0" />
+	  </dependencies>
+  </metadata>
+	
+</package>
