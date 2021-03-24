@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils", "MG.Utils\MG.Utils.csproj", "{AB6BA374-1583-4B0A-81AA-DA30B81A0323}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.Swagger", "MG.WebHost.Infrastructure\MG.Utils.AspNetCore.Swagger.csproj", "{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.Swagger", "MG.Utils.AspNetCore.Swagger\MG.Utils.AspNetCore.Swagger.csproj", "{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Test", "MG.Utils.Test\MG.Utils.Test.csproj", "{96B0A082-0672-457A-B55E-BD28891BD2B9}"
 EndProject
