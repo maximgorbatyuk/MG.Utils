@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils", "MG.Utils\MG.Utils.csproj", "{AB6BA374-1583-4B0A-81AA-DA30B81A0323}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.WebHost.Infrastructure", "MG.WebHost.Infrastructure\MG.WebHost.Infrastructure.csproj", "{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.WebHost.Infrastructure.Contracts", "MG.WebHost.Infrastructure.Contracts\MG.WebHost.Infrastructure.Contracts.csproj", "{10C1EB75-E5C9-4BBC-AF4B-5E83BCEB879F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.Swagger", "MG.WebHost.Infrastructure\MG.Utils.AspNetCore.Swagger.csproj", "{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Test", "MG.Utils.Test\MG.Utils.Test.csproj", "{96B0A082-0672-457A-B55E-BD28891BD2B9}"
 EndProject
@@ -48,6 +46,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Authenticati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.Middlewares", "MG.Utils.AspNetCore.Middlewares\MG.Utils.AspNetCore.Middlewares.csproj", "{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.Redis", "MG.Utils.AspNetCore.Redis\MG.Utils.AspNetCore.Redis.csproj", "{30C6158F-8518-416B-A6CE-3026E8670D85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,10 +62,6 @@ Global
 		{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10C1EB75-E5C9-4BBC-AF4B-5E83BCEB879F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10C1EB75-E5C9-4BBC-AF4B-5E83BCEB879F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10C1EB75-E5C9-4BBC-AF4B-5E83BCEB879F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10C1EB75-E5C9-4BBC-AF4B-5E83BCEB879F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{96B0A082-0672-457A-B55E-BD28891BD2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{96B0A082-0672-457A-B55E-BD28891BD2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96B0A082-0672-457A-B55E-BD28891BD2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -122,11 +118,16 @@ Global
 		{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C6158F-8518-416B-A6CE-3026E8670D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C6158F-8518-416B-A6CE-3026E8670D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C6158F-8518-416B-A6CE-3026E8670D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C6158F-8518-416B-A6CE-3026E8670D85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{B2CAADFE-0EFC-4F6A-97D4-FFF31E4CC0FE} = {77FF6165-CFAD-4155-B1C6-3B85B2C6695F}
 		{96B0A082-0672-457A-B55E-BD28891BD2B9} = {823B1C75-5EC0-41D9-921D-31AF26D254BA}
 		{4ECF4166-94F3-45BE-BAE4-971467CC00C2} = {77FF6165-CFAD-4155-B1C6-3B85B2C6695F}
 		{4BEFBA8E-86AD-4237-88AC-CA799EA01198} = {823B1C75-5EC0-41D9-921D-31AF26D254BA}
@@ -140,6 +141,7 @@ Global
 		{056D0A00-5315-4F04-BAC7-E7A7D3418A68} = {823B1C75-5EC0-41D9-921D-31AF26D254BA}
 		{C035E16B-22C7-42B7-803F-49971AFA9B41} = {53C4538C-7E24-4F29-9431-9889B24175BD}
 		{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED} = {77FF6165-CFAD-4155-B1C6-3B85B2C6695F}
+		{30C6158F-8518-416B-A6CE-3026E8670D85} = {77FF6165-CFAD-4155-B1C6-3B85B2C6695F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A7973A9-38DE-45D8-97FB-64A232B29588}

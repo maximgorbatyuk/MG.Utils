@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace MG.WebHost.Infrastructure.Contracts.CacheServices
+namespace MG.Utils.AspNetCore.Redis
 {
     public interface ICache
     {

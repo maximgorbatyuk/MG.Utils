@@ -3,10 +3,9 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using MG.Utils.Abstract;
-using MG.WebHost.Infrastructure.Contracts.CacheServices;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace MG.WebHost.Infrastructure.Infrastructure
+namespace MG.Utils.AspNetCore.Redis
 {
     public class ApplicationCache : ICache
     {

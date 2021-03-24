@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using MG.Utils.Abstract.NonNullableObjects;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +10,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
-namespace MG.WebHost.Infrastructure.Config
+namespace MG.Utils.AspNetCore.Swagger
 {
     public static class SwaggerConfig
     {
@@ -17,7 +18,7 @@ namespace MG.WebHost.Infrastructure.Config
 
         private const string Endpoint = "/swagger/v1/swagger.json";
 
-        public static void ApplyUI(SwaggerUIOptions config, string appName)
+        public static void ApplyUI(SwaggerUIOptions config, NonNullableString appName)
         {
             config.RoutePrefix = string.Empty;
             config.SwaggerEndpoint(Endpoint, appName);
@@ -25,7 +26,7 @@ namespace MG.WebHost.Infrastructure.Config
             config.DocExpansion(DocExpansion.List);
         }
 
-        public static void Apply(SwaggerGenOptions config, string appName, string frontendAppLink)
+        public static void Apply(SwaggerGenOptions config, NonNullableString appName, NonNullableString frontendAppLink)
         {
             config.SwaggerDoc(Version, new OpenApiInfo
             {
@@ -34,14 +35,16 @@ namespace MG.WebHost.Infrastructure.Config
                 Description = $"Frontend: {frontendAppLink}"
             });
 
+            const string bearer = "Bearer";
+
             // copied from https://stackoverflow.com/a/58972781
-            config.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            config.AddSecurityDefinition(bearer, new OpenApiSecurityScheme
             {
                 Description = @"JWT Authorization header using the Bearer scheme.",
                 Name = "Authorization",
                 In = ParameterLocation.Header,
                 Type = SecuritySchemeType.ApiKey,
-                Scheme = "Bearer"
+                Scheme = bearer
             });
 
             config.AddSecurityRequirement(new OpenApiSecurityRequirement()
@@ -52,10 +55,10 @@ namespace MG.WebHost.Infrastructure.Config
                         Reference = new OpenApiReference
                         {
                             Type = ReferenceType.SecurityScheme,
-                            Id = "Bearer"
+                            Id = bearer
                         },
                         Scheme = "oauth2",
-                        Name = "Bearer",
+                        Name = bearer,
                         In = ParameterLocation.Header
                     },
                     Array.Empty<string>()
