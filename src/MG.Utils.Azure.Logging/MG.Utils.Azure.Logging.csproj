@@ -1,8 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Company>@maximgorbatyuk</Company>
+		<Copyright>Copyright © @maximgorbatyuk</Copyright>
+		<RepositoryUrl>https://github.com/maximgorbatyuk/MG.Utils</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/maximgorbatyuk/MG.Utils</PackageProjectUrl>
+		<PackageLicenseFile></PackageLicenseFile>
+		<Description>Azure blob service for your web application</Description>
+		<Product>Web app utils</Product>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>,NU5128,NU5118</NoWarn>
+	</PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.2" />

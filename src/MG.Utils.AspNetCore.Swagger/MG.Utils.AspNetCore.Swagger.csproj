@@ -15,6 +15,10 @@
     <Authors>@maximgorbatyuk</Authors>
   </PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>,NU5128,NU5118</NoWarn>
+	</PropertyGroup>
+
   <ItemGroup>
 	<PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.2" />
 	<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.1" />
