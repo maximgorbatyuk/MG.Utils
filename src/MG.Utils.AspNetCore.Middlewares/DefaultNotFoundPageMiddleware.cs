@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace MG.WebHost.Infrastructure.Middlewares
+namespace MG.Utils.AspNetCore.Middlewares
 {
     public class DefaultNotFoundPageMiddleware
     {

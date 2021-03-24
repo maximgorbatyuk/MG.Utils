@@ -1,25 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MG.WebHost.Infrastructure.Middlewares.Error
+namespace MG.Utils.AspNetCore.Middlewares.Error
 {
     public class ValidationProblemDetails : ProblemDetails
     {
         public const int ValidationStatusCode = (int)HttpStatusCode.BadRequest;
 
-        public ValidationProblemDetails(ICollection<ValidationError> validationErrors)
+        public ValidationProblemDetails(
+            ICollection<ValidationError> validationErrors, string instance)
         {
             validationErrors.ThrowIfNullOrEmpty(nameof(validationErrors));
             ValidationErrors = validationErrors;
 
             Status = ValidationStatusCode;
             Title = "Request Validation Error";
-
-            // TODO Maxim: если будет балансировка, то тут нужно будет передавать имя ноды
-            Instance = "CT Portal";
+            Instance = instance;
         }
 
         public ICollection<ValidationError> ValidationErrors { get; }

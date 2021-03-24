@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MG.WebHost.Infrastructure.Middlewares.Error
+namespace MG.Utils.AspNetCore.Middlewares.Error
 {
     public class ErrorDetails
     {

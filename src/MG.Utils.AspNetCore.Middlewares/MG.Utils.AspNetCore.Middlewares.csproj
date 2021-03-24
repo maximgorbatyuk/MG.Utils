@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Company>@maximgorbatyuk</Company>
+		<Copyright>Copyright © @maximgorbatyuk</Copyright>
+		<RepositoryUrl>https://github.com/maximgorbatyuk/MG.Utils</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/maximgorbatyuk/MG.Utils</PackageProjectUrl>
+		<PackageLicenseFile></PackageLicenseFile>
+		<Description>Useful utilities for the ASP</Description>
+		<Product>Web app utils</Product>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>,NU5128,NU5118</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+	</ItemGroup>
+
+</Project>

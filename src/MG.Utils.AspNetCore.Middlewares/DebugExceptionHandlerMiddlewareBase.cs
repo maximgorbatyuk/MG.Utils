@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Threading.Tasks;
+using MG.Utils.AspNetCore.Middlewares.Error;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Localization;
 
-namespace MG.WebHost.Infrastructure.Middlewares.Error
+namespace MG.Utils.AspNetCore.Middlewares
 {
-    public class DebugExceptionHandlerMiddleware : ExceptionHandlerMiddleware
+    public abstract class DebugExceptionHandlerMiddlewareBase : ExceptionHandlerMiddlewareBase
     {
-        public DebugExceptionHandlerMiddleware(RequestDelegate next, IStringLocalizer localizer)
-            : base(next, localizer)
+        protected DebugExceptionHandlerMiddlewareBase(RequestDelegate next)
+            : base(next)
         {
         }
 
         protected override Task WriteResponseAsync(HttpContext context, int statusCode, string message, Exception exception)
         {
-            return new JsonErrorResponse<DebugErrorDetails>(
+            return new JsonErrorResponse(
                 context: context,
-                error: new DebugErrorDetails(statusCode, message, exception),
+                serializedError: Serialize(new DebugErrorDetails(statusCode, message, exception)),
                 statusCode: statusCode).WriteAsync();
         }
 

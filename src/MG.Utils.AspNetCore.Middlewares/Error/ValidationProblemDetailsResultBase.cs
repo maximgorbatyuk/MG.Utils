@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MG.WebHost.Infrastructure.Middlewares.Error
+namespace MG.Utils.AspNetCore.Middlewares.Error
 {
-    public class ValidationProblemDetailsResult : IActionResult
+    public abstract class ValidationProblemDetailsResultBase : IActionResult
     {
         public async Task ExecuteResultAsync(ActionContext context)
         {
@@ -21,15 +22,25 @@ namespace MG.WebHost.Infrastructure.Middlewares.Error
                 {
                     errors.AddRange(value.Errors
                         .Select(modelStateError => new ValidationError(
-                            name: key.ToSnakeCase(),
+                            name: Serialize(key),
                             description: modelStateError.ErrorMessage)));
                 }
             }
 
-            await new JsonErrorResponse<ValidationProblemDetails>(
+            await new JsonErrorResponse(
                 context: context.HttpContext,
-                error: new ValidationProblemDetails(errors),
-                statusCode: ValidationProblemDetails.ValidationStatusCode).WriteAsync();
+                serializedError: Serialize(new ValidationProblemDetails(errors, AppInstanceName)),
+                statusCode: ValidationProblemDetails.ValidationStatusCode)
+                .WriteAsync();
+        }
+
+        public abstract string AppInstanceName { get; }
+
+        public abstract string Serialize<T>([NotNull] T instance);
+
+        public virtual string Serialize([NotNull] string key)
+        {
+            return key;
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿using MG.Utils.Helpers;
+﻿using MG.Utils.Abstract;
 
-namespace MG.WebHost.Infrastructure.Middlewares.Error
+namespace MG.Utils.AspNetCore.Middlewares.Error
 {
     public record ValidationError
     {

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 
-namespace MG.WebHost.Infrastructure.Middlewares
+namespace MG.Utils.AspNetCore.I18N.Middlewares
 {
     // https://github.com/khalidabuhakmeh/aspnetcore_localization_sample/blob/master/WebApplication/Middlewares/RequestLocalizationCookiesMiddleware.cs
     public class RequestLocalizationCookiesMiddleware
