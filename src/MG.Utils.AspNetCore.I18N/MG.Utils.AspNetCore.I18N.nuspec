@@ -2,7 +2,7 @@
 <package >
   <metadata>
 	  <id>MaximGorbatyuk.Utils.AspNetCore.I18N</id>
-	  <version>1.0.1</version>
+	  <version>1.0.2</version>
 	  <title>MaximGorbatyuk.Utils.AspNetCore.I18N - useful classes for cut your routine</title>
 	  <authors>@maximgorbatyuk</authors>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>

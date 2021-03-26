@@ -53,5 +53,11 @@ namespace MG.Utils.AspNetCore.I18N
 
             return services;
         }
+
+        public static IServiceCollection AddI18N<TConstants>(
+            this IServiceCollection services, IList<CultureInfo> supportedCultures)
+        {
+            return services.AddI18N(supportedCultures, typeof(TConstants));
+        }
     }
 }
