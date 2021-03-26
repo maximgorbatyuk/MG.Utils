@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using MG.Utils.Abstract;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
 
 namespace MG.Utils.AspNetCore.I18N
 {
@@ -23,11 +25,15 @@ namespace MG.Utils.AspNetCore.I18N
         }
 
         public static IServiceCollection AddI18N(
-            this IServiceCollection services, IList<CultureInfo> supportedCultures)
+            this IServiceCollection services, IList<CultureInfo> supportedCultures, Type classWithConstants)
         {
             supportedCultures.ThrowIfNullOrEmpty(nameof(supportedCultures));
 
-            services.AddSingleton<ILocalizationJsonSettings, LocalizationJsonSettings>();
+            services.AddSingleton<ILocalizationJsonSettings, LocalizationJsonSettings>(
+                x => new LocalizationJsonSettings(
+                    logger: x.GetRequiredService<ILogger<LocalizationJsonSettings>>(),
+                    classWithTranslationKeys: classWithConstants));
+
             services.AddTransient<IStringLocalizer, JsonFileLocalizer>();
             services.AddSingleton<IStringLocalizerFactory, JsonFileLocalizeFactory>();
 

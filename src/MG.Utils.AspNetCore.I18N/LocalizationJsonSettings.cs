@@ -14,12 +14,14 @@ namespace MG.Utils.AspNetCore.I18N
     public class LocalizationJsonSettings : ILocalizationJsonSettings
     {
         private readonly ILogger<LocalizationJsonSettings> _logger;
+        private readonly Type _classWithTranslationKeys;
 
         private static IReadOnlyCollection<Translate> _translates;
 
-        public LocalizationJsonSettings(ILogger<LocalizationJsonSettings> logger)
+        public LocalizationJsonSettings(ILogger<LocalizationJsonSettings> logger, Type classWithTranslationKeys)
         {
             _logger = logger;
+            _classWithTranslationKeys = classWithTranslationKeys;
         }
 
         public CultureInfo CultureInfo => CultureInfo.CurrentCulture;
@@ -64,7 +66,7 @@ namespace MG.Utils.AspNetCore.I18N
         {
             InitializedOrFail();
 
-            new TranslationKeys(_translates, typeof(DataAnnotationErrorMessages)).MatchOrFail();
+            new TranslationKeys(_translates, _classWithTranslationKeys).MatchOrFail();
 
             var invalidTranslates = _translates.Where(x => !x.IsValid()).ToArray();
             if (invalidTranslates.Any())
