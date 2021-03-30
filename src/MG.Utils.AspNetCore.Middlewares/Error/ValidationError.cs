@@ -2,7 +2,7 @@
 
 namespace MG.Utils.AspNetCore.Middlewares.Error
 {
-    public record ValidationError
+    public class ValidationError
     {
         public ValidationError(string name, string description)
         {

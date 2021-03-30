@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace MG.Utils.AspNetCore.Middlewares.Error
 {
@@ -18,12 +19,12 @@ namespace MG.Utils.AspNetCore.Middlewares.Error
 
             if (modelStateEntries.Any())
             {
-                foreach (var (key, value) in modelStateEntries)
+                foreach ((string key, ModelStateEntry value) in modelStateEntries)
                 {
                     errors.AddRange(value.Errors
-                        .Select(modelStateError => new ValidationError(
-                            name: Serialize(key),
-                            description: modelStateError.ErrorMessage)));
+                        .Select(modelStateError => Error(
+                            key: key,
+                            modelStateError: modelStateError)));
                 }
             }
 
@@ -38,9 +39,11 @@ namespace MG.Utils.AspNetCore.Middlewares.Error
 
         public abstract string Serialize<T>([NotNull] T instance);
 
-        public virtual string Serialize([NotNull] string key)
+        protected virtual ValidationError Error(string key, ModelError modelStateError)
         {
-            return key;
+            return new ValidationError(
+                name: key,
+                description: modelStateError.ErrorMessage);
         }
     }
 }
