@@ -2,7 +2,7 @@
 <package >
   <metadata>
 	  <id>MaximGorbatyuk.Utils.AspNetCore.Swagger</id>
-	  <version>1.0.0</version>
+	  <version>1.0.1</version>
 	  <title>MaximGorbatyuk.Utils.AspNetCore.Swagger - useful classes for cut your routine</title>
 	  <authors>@maximgorbatyuk</authors>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,7 +13,7 @@
 	  <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
 	  <tags></tags>
 	  <dependencies>
-		  <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.2" />
+		  <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.3" />
 		  <dependency id="Swashbuckle.AspNetCore.SwaggerGen" version="6.1.1" />
 		  <dependency id="Swashbuckle.AspNetCore.SwaggerUI" version="6.1.1" />
 	  </dependencies>

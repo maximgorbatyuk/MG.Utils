@@ -2,7 +2,7 @@
 <package >
   <metadata>
 	  <id>MaximGorbatyuk.Utils.Smtp</id>
-	  <version>1.0.0</version>
+	  <version>1.0.1</version>
 	  <title>MaximGorbatyuk.Utils.Smtp - useful classes for cut your routine</title>
 	  <authors>@maximgorbatyuk</authors>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>

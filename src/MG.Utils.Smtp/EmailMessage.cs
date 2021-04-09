@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using MG.Utils.Abstract;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract.Extensions;
 
 namespace MG.Utils.Smtp
 {
