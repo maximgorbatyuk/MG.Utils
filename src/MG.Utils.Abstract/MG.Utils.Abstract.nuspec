@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils.Abstract</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

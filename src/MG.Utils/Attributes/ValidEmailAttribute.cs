@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
-using MG.Utils.Helpers;
+using MG.Utils.Validation;
 
 namespace MG.Utils.Attributes
 {

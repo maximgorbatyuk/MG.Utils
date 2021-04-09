@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace MG.Utils.Helpers
+namespace MG.Utils.Validation
 {
     public class EmailValidRegex : Regex
     {

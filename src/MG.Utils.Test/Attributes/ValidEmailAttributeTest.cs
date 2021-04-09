@@ -1,6 +1,6 @@
-﻿using MG.Utils.Attributes;
-using MG.Utils.Exceptions;
-using MG.Utils.Validators;
+﻿using MG.Utils.Abstract.Exceptions;
+using MG.Utils.Attributes;
+using MG.Utils.Validation;
 using Xunit;
 
 namespace MG.Utils.Test.Attributes

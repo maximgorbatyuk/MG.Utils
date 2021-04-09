@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MG.Utils.Exceptions
+namespace MG.Utils.Abstract.Exceptions
 {
     public class ResourceNotFoundException : Exception
     {

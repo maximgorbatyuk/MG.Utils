@@ -2,9 +2,9 @@
 using MG.Utils.Abstract;
 using MG.Utils.Abstract.Dates;
 using MG.Utils.Abstract.Dates.Interfaces;
-using MG.Utils.Exceptions;
+using MG.Utils.Abstract.Exceptions;
 
-namespace MG.Utils.Validators
+namespace MG.Utils.Validation
 {
     public static class EntityValidatorExtensions
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace MG.Utils.Helpers
+namespace MG.Utils.Abstract.Extensions
 {
     // https://habr.com/ru/post/313394/
     public static class ExpressionExtensions

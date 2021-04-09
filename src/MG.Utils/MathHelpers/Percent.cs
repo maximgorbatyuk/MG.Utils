@@ -1,5 +1,5 @@
 ﻿using System;
-using MG.Utils.Helpers;
+using MG.Utils.Abstract.Extensions;
 
 namespace MG.Utils.MathHelpers
 {

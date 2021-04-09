@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MG.Utils.Abstract;
 
-namespace MG.Utils.Exceptions
+namespace MG.Utils.Abstract.Exceptions
 {
-    public class EntityInvalidException : BadRequestException
+    public class EntityInvalidException : InvalidOperationException
     {
         private EntityInvalidException(string message)
             : base(message)

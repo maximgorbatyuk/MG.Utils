@@ -1,5 +1,5 @@
 ﻿using MG.Utils.Abstract.Dates.Interfaces;
-using MG.Utils.Entities;
+using MG.Utils.Abstract.Entities;
 
 namespace MG.Utils.Interfaces
 {

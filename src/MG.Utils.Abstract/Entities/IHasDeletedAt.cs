@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MG.Utils.Interfaces
+namespace MG.Utils.Abstract.Entities
 {
     public interface IHasDeletedAt
     {

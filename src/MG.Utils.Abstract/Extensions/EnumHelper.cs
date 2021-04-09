@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 
-namespace MG.Utils.Helpers
+namespace MG.Utils.Abstract.Extensions
 {
     public static class EnumHelper
     {

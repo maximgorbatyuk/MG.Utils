@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 
-namespace MG.Utils.Helpers
+namespace MG.Utils.Abstract.Extensions
 {
     public static class ClaimHelper
     {

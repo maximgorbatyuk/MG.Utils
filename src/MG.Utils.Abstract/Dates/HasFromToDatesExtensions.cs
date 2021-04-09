@@ -1,7 +1,6 @@
 ﻿using System;
 using MG.Utils.Abstract.Dates.Interfaces;
 using MG.Utils.Abstract.Exceptions;
-using MG.Utils.Entities;
 
 namespace MG.Utils.Abstract.Dates
 {
@@ -15,9 +14,9 @@ namespace MG.Utils.Abstract.Dates
         /// <returns>Date.</returns>
         /// <exception cref="InvalidDateRangeException">The error.</exception>
         public static DateTimeOffset ToOrFail<T>(this T instance)
-            where T : IHasFromToDates, IHasId
+            where T : IHasFromToDates
         {
-            return instance.To ?? throw InvalidDateRangeException.CreateFromEntity<T>(instance.Id);
+            return ToOrFail(instance as IHasFromToDates);
         }
 
         /// <summary>

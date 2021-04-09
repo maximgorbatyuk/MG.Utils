@@ -1,5 +1,5 @@
 ﻿using System;
-using MG.Utils.Interfaces;
+using MG.Utils.Abstract.Entities;
 
 namespace MG.Utils.Entities
 {

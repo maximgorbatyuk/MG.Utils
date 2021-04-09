@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MG.Utils.Abstract;
-using MG.Utils.Entities;
-using MG.Utils.Exceptions;
+using MG.Utils.Abstract.Entities;
+using MG.Utils.Abstract.Exceptions;
 
-namespace MG.Utils.Helpers
+namespace MG.Utils.Abstract.Extensions
 {
     public static class CollectionExtensions
     {
@@ -52,6 +51,11 @@ namespace MG.Utils.Helpers
         public static async Task<T> FirstItemOrNullAsync<T>(this Task<T[]> arrayTask)
         {
             return (await arrayTask).FirstOrDefault();
+        }
+
+        public static bool NotNullOrEmpty<T>(this IEnumerable<T> items)
+        {
+            return items != null && items.Any();
         }
     }
 }

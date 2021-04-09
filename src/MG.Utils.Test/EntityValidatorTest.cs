@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using MG.Utils.Exceptions;
-using MG.Utils.Validators;
+using MG.Utils.Abstract.Exceptions;
+using MG.Utils.Validation;
 using Xunit;
 
 namespace MG.Utils.Test

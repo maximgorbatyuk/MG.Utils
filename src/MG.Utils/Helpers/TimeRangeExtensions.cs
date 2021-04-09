@@ -2,7 +2,7 @@
 using MG.Utils.Abstract;
 using MG.Utils.Abstract.Dates;
 using MG.Utils.Abstract.Dates.Interfaces;
-using MG.Utils.Entities;
+using MG.Utils.Abstract.Entities;
 using MG.Utils.Exceptions;
 
 namespace MG.Utils.Helpers

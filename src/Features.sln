@@ -24,29 +24,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{823B1C75
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{53C4538C-7E24-4F29-9431-9889B24175BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Blob", "MG.Utils.Azure.Blob\MG.Utils.Azure.Blob.csproj", "{7C077022-4095-4F33-BEDD-56E95A5953E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Azure.Blob", "MG.Utils.Azure.Blob\MG.Utils.Azure.Blob.csproj", "{7C077022-4095-4F33-BEDD-56E95A5953E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.ServiceBus", "MG.Utils.Azure.ServiceBus\MG.Utils.Azure.ServiceBus.csproj", "{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Azure.ServiceBus", "MG.Utils.Azure.ServiceBus\MG.Utils.Azure.ServiceBus.csproj", "{1562EAF2-7AF4-4D5F-B65A-22EBF2C60DAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Smtp", "MG.Utils.Smtp\MG.Utils.Smtp.csproj", "{234D531D-1EBB-4186-9327-CFCF48C5B8E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Smtp", "MG.Utils.Smtp\MG.Utils.Smtp.csproj", "{234D531D-1EBB-4186-9327-CFCF48C5B8E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCore", "AspNetCore", "{77FF6165-CFAD-4155-B1C6-3B85B2C6695F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Authentication", "MG.Utils.Authentication\MG.Utils.Authentication.csproj", "{C7CCAFAB-20AD-4122-AEBC-5DD5A400FEB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Authentication", "MG.Utils.Authentication\MG.Utils.Authentication.csproj", "{C7CCAFAB-20AD-4122-AEBC-5DD5A400FEB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Export", "MG.Utils.Export\MG.Utils.Export.csproj", "{81292E0A-C9E1-4B3F-B108-D2F82DCCCE1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Export", "MG.Utils.Export\MG.Utils.Export.csproj", "{81292E0A-C9E1-4B3F-B108-D2F82DCCCE1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.I18N", "MG.Utils.AspNetCore.I18N\MG.Utils.AspNetCore.I18N.csproj", "{463FA44C-4E15-4CE6-BA54-3131ADC812D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.I18N", "MG.Utils.AspNetCore.I18N\MG.Utils.AspNetCore.I18N.csproj", "{463FA44C-4E15-4CE6-BA54-3131ADC812D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Logging", "MG.Utils.Azure.Logging\MG.Utils.Azure.Logging.csproj", "{AF72AE76-3DE2-4CC3-AA92-0FF684276505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Azure.Logging", "MG.Utils.Azure.Logging\MG.Utils.Azure.Logging.csproj", "{AF72AE76-3DE2-4CC3-AA92-0FF684276505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.I18N.Tests", "MG.Utils.AspNetCore.I18N.Tests\MG.Utils.AspNetCore.I18N.Tests.csproj", "{056D0A00-5315-4F04-BAC7-E7A7D3418A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.I18N.Tests", "MG.Utils.AspNetCore.I18N.Tests\MG.Utils.AspNetCore.I18N.Tests.csproj", "{056D0A00-5315-4F04-BAC7-E7A7D3418A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Azure.Authentication", "MG.Utils.Azure.Authentication\MG.Utils.Azure.Authentication.csproj", "{C035E16B-22C7-42B7-803F-49971AFA9B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Azure.Authentication", "MG.Utils.Azure.Authentication\MG.Utils.Azure.Authentication.csproj", "{C035E16B-22C7-42B7-803F-49971AFA9B41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.Middlewares", "MG.Utils.AspNetCore.Middlewares\MG.Utils.AspNetCore.Middlewares.csproj", "{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.Middlewares", "MG.Utils.AspNetCore.Middlewares\MG.Utils.AspNetCore.Middlewares.csproj", "{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.Redis", "MG.Utils.AspNetCore.Redis\MG.Utils.AspNetCore.Redis.csproj", "{30C6158F-8518-416B-A6CE-3026E8670D85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.Redis", "MG.Utils.AspNetCore.Redis\MG.Utils.AspNetCore.Redis.csproj", "{30C6158F-8518-416B-A6CE-3026E8670D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Validation", "MG.Utils.Validation\MG.Utils.Validation.csproj", "{40ED04F1-BD2A-4810-B1B5-5FE00A15D845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Validation.Test", "MG.Utils.Validation.Test\MG.Utils.Validation.Test.csproj", "{424C7D99-DD7C-4937-AF42-B0B4A08E918A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,6 +126,14 @@ Global
 		{30C6158F-8518-416B-A6CE-3026E8670D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30C6158F-8518-416B-A6CE-3026E8670D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30C6158F-8518-416B-A6CE-3026E8670D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40ED04F1-BD2A-4810-B1B5-5FE00A15D845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40ED04F1-BD2A-4810-B1B5-5FE00A15D845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40ED04F1-BD2A-4810-B1B5-5FE00A15D845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40ED04F1-BD2A-4810-B1B5-5FE00A15D845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424C7D99-DD7C-4937-AF42-B0B4A08E918A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424C7D99-DD7C-4937-AF42-B0B4A08E918A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424C7D99-DD7C-4937-AF42-B0B4A08E918A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424C7D99-DD7C-4937-AF42-B0B4A08E918A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +154,7 @@ Global
 		{C035E16B-22C7-42B7-803F-49971AFA9B41} = {53C4538C-7E24-4F29-9431-9889B24175BD}
 		{ADE59B1F-CBBE-4F0F-919A-A8B452C065ED} = {77FF6165-CFAD-4155-B1C6-3B85B2C6695F}
 		{30C6158F-8518-416B-A6CE-3026E8670D85} = {77FF6165-CFAD-4155-B1C6-3B85B2C6695F}
+		{424C7D99-DD7C-4937-AF42-B0B4A08E918A} = {823B1C75-5EC0-41D9-921D-31AF26D254BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A7973A9-38DE-45D8-97FB-64A232B29588}

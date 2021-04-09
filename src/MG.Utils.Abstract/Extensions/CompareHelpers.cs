@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MG.Utils.Helpers
+namespace MG.Utils.Abstract.Extensions
 {
     public static class CompareHelpers
     {

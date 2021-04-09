@@ -1,7 +1,7 @@
-﻿using MG.Utils.Helpers;
+﻿using MG.Utils.Abstract.Extensions;
 using Xunit;
 
-namespace MG.Utils.Test.Helpers
+namespace MG.Utils.Abstract.Test.Extensions
 {
     public class EnumHelperTest
     {

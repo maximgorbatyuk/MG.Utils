@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using MG.Utils.Abstract;
-using MG.Utils.Exceptions;
+using MG.Utils.Abstract.Exceptions;
 
-namespace MG.Utils.Validators
+namespace MG.Utils.Validation
 {
     public class EntityValidator<T>
     {

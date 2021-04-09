@@ -1,4 +1,4 @@
-﻿namespace MG.Utils.Entities
+﻿namespace MG.Utils.Abstract.Entities
 {
     public interface IHasId
     {
