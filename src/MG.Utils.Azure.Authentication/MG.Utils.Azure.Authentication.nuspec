@@ -13,7 +13,7 @@
     <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
     <tags></tags>
 	  <dependencies>
-		  <dependency id="MaximGorbatyuk.Utils" version="1.0.2" />
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.3" />
 		  <dependency id="MaximGorbatyuk.Utils.Authentication" version="1.0.0" />
 	  </dependencies>
   </metadata>

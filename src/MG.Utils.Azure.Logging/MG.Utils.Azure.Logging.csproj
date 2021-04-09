@@ -18,7 +18,7 @@
 	</PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.2" />
+    <PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.3" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.17.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />

@@ -18,7 +18,7 @@
 	</PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.2" />
+	<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.3" />
 	<PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
 	<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
 	<PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />

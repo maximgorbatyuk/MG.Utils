@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using MG.Utils.Abstract.Exceptions;
 using MG.Utils.Azure.Blob.Contracts;
 using MG.Utils.Exceptions;
 

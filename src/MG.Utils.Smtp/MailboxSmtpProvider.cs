@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using MG.Utils.Abstract;
 using MG.Utils.Helpers;
-using MG.Utils.Validators;
+using MG.Utils.Validation;
 using MimeKit;
 
 namespace MG.Utils.Smtp
