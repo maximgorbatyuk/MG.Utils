@@ -71,7 +71,7 @@ namespace MG.Utils.Test.I18N
         [Theory]
         [InlineData("HelloKey", "Hello", "Привет", "fr")]
         [InlineData("HelloKey", "Hello", "Привет", "jp")]
-        public void TranslationByName_Cases(
+        public void TranslationByName_NoValueForCulture_ReturnsEn(
             string key, string en, string ru, string culture)
         {
             var target = new Translate
@@ -81,7 +81,25 @@ namespace MG.Utils.Test.I18N
                 ru = ru
             };
 
-            Assert.Throws<ArgumentOutOfRangeException>(() => target.TranslationByName(new CultureInfo(culture)));
+            Assert.Equal(en, target.TranslationByName(new CultureInfo(culture)));
+        }
+
+        [Theory]
+        [InlineData("HelloKey", "", "Привет", "fr")]
+        [InlineData("HelloKey", "", "Привет", "jp")]
+        [InlineData("HelloKey", "", "", "fr")]
+        [InlineData("HelloKey", "", "", "jp")]
+        public void TranslationByName_NoValueForCulture_NoEnValue_ReturnsKey(
+            string key, string en, string ru, string culture)
+        {
+            var target = new Translate
+            {
+                Key = key,
+                en = en,
+                ru = ru
+            };
+
+            Assert.Equal(key, target.TranslationByName(new CultureInfo(culture)));
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using MG.Utils.Abstract;
 using MG.Utils.Helpers;
 
@@ -40,11 +39,7 @@ namespace MG.Utils.I18N
             return cultureInfo.TwoLetterISOLanguageName switch
             {
                 nameof(ru) => !ru.IsNullOrEmpty() ? ru : en,
-                nameof(en) => !en.IsNullOrEmpty() ? en : Key,
-                _ => throw new ArgumentOutOfRangeException(
-                    paramName: nameof(cultureInfo.TwoLetterISOLanguageName),
-                    actualValue: cultureInfo.TwoLetterISOLanguageName,
-                    message: "The value has now ways")
+                _ => !en.IsNullOrEmpty() ? en : Key
             };
         }
 
