@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.IO;
+using System.Threading.Tasks;
+using MailKit;
 using MG.Utils.Abstract;
 using MG.Utils.Helpers;
 using MG.Utils.Validation;
@@ -13,6 +16,7 @@ namespace MG.Utils.Smtp
         public MailboxSmtpProvider(SmtpEmailSettings emailSettings)
         {
             _emailSettings = emailSettings;
+            Logs = string.Empty;
         }
 
         public Task SendAsync(string serializedMessage)
@@ -41,7 +45,8 @@ namespace MG.Utils.Smtp
                 Text = message.Body
             };
 
-            using var client = new MailKit.Net.Smtp.SmtpClient
+            await using var memoryStream = new MemoryStream();
+            using var client = new MailKit.Net.Smtp.SmtpClient(new ProtocolLogger(memoryStream))
             {
                 ServerCertificateValidationCallback = (s, c, h, e) => true
             };
@@ -64,6 +69,11 @@ namespace MG.Utils.Smtp
             await client.SendAsync(mimeMessage);
 
             await client.DisconnectAsync(true);
+
+            using var reader = new StreamReader(memoryStream);
+            Logs = await reader.ReadToEndAsync();
         }
+
+        public string Logs { get; private set; }
     }
 }
