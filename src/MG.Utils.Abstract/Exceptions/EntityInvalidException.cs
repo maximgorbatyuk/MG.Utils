@@ -6,7 +6,7 @@ namespace MG.Utils.Abstract.Exceptions
 {
     public class EntityInvalidException : InvalidOperationException
     {
-        private EntityInvalidException(string message)
+        protected EntityInvalidException(string message)
             : base(message)
         {
         }
