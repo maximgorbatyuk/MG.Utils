@@ -12,10 +12,11 @@
     <releaseNotes>First release.</releaseNotes>
     <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
     <tags></tags>
-	  <dependencies>
-		  <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.3" />
-      <dependency id="MaximGorbatyuk.Utils.Validation" version="1.0.0" />
-	  </dependencies>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="MaximGorbatyuk.Utils.Validation" version="1.0.1" />
+      </group>
+    </dependencies>
   </metadata>
 	
 </package>
