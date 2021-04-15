@@ -18,7 +18,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.3" />
+		<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.4" />
 		<PackageReference Include="ClosedXML" Version="0.95.4" />
 		<PackageReference Include="itext7" Version="7.1.14" />
 		<PackageReference Include="itext7.pdfhtml" Version="3.0.3" />
