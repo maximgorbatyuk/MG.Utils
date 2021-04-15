@@ -18,11 +18,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.4" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MG.Utils.Abstract\MG.Utils.Abstract.csproj" />
   </ItemGroup>
 
 </Project>
