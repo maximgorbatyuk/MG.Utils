@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils.Azure.Logging</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>MaximGorbatyuk.Utils.Azure.Logging - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,7 +13,7 @@
     <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
     <tags></tags>
 	  <dependencies>
-		  <dependency id="MaximGorbatyuk.Utils" version="1.0.4" />
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.6" />
 		  <dependency id="Microsoft.ApplicationInsights.AspNetCore" version="2.17.0" />
 		  <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" />
 		  <dependency id="Microsoft.Extensions.DependencyInjection" version="5.0.1" />

@@ -18,7 +18,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.2" />
+		<PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.6" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
 		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />

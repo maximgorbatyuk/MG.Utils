@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils.Azure.ServiceBus</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,7 +14,7 @@
     <tags></tags>
 	  <dependencies>
 		  <dependency id="Azure.Messaging.ServiceBus" version="7.1.1" />
-		  <dependency id="MaximGorbatyuk.Utils" version="1.0.4" />
+		  <dependency id="MaximGorbatyuk.Utils" version="1.0.6" />
 		  <dependency id="AspNetCore.HealthChecks.AzureServiceBus" version="5.0.2" />
 		  <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" />
 		  <dependency id="Microsoft.Extensions.Configuration.Binder" version="5.0.0" />
