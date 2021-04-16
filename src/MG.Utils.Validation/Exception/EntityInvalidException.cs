@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MG.Utils.Abstract;
 
-namespace MG.Utils.Abstract.Exceptions
+namespace MG.Utils.Validation.Exception
 {
     public class EntityInvalidException : InvalidOperationException
     {

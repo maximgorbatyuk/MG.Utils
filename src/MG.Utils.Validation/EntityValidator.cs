@@ -5,6 +5,8 @@ using System.Linq;
 using System.Reflection;
 using MG.Utils.Abstract;
 using MG.Utils.Abstract.Exceptions;
+using MG.Utils.Validation.Exception;
+using EntityInvalidException = MG.Utils.Validation.Exception.EntityInvalidException;
 
 namespace MG.Utils.Validation
 {
@@ -33,7 +35,7 @@ namespace MG.Utils.Validation
         /// <summary>
         /// Asserts that a model entity is valid by it's annotation validation attributes.
         /// </summary>
-        /// <exception cref="EntityInvalidException">If the entity is not valid.</exception>
+        /// <exception cref="Validation.Exception.EntityInvalidException">If the entity is not valid.</exception>
         public void ThrowIfInvalid()
         {
             if (!Valid())

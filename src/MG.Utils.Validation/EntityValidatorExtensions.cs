@@ -14,7 +14,7 @@ namespace MG.Utils.Validation
         /// <typeparam name="T">Generic.</typeparam>
         /// <param name="entity">Entity instance.</param>
         /// <returns>The entity.</returns>
-        /// <exception cref="EntityInvalidException">If the entity is not valid.</exception>
+        /// <exception cref="Validation.Exception.EntityInvalidException">If the entity is not valid.</exception>
         public static T ThrowIfInvalid<T>(this T entity)
         {
             new EntityValidator<T>(entity).ThrowIfInvalid();
