@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MG.Utils.Abstract.Exceptions;
 using MG.Utils.Attributes;
 using MG.Utils.Validation;
+using MG.Utils.Validation.Exception;
 using Xunit;
 
 namespace MG.Utils.Test.Attributes

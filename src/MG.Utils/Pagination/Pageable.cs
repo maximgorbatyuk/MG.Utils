@@ -5,7 +5,7 @@ namespace MG.Utils.Pagination
     // TODO Maxim: rename to Paginated
     public record Pageable<T> : PaginatedListBase
     {
-        public IReadOnlyCollection<T> Results { get; init; }
+        public IReadOnlyCollection<T> Results { get; protected set; }
 
         public Pageable(int currentPage, int pageSize, int totalItems, IReadOnlyCollection<T> results)
         {

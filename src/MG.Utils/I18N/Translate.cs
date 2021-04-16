@@ -21,12 +21,12 @@ namespace MG.Utils.I18N
             this.ru = ru;
         }
 
-        public string Key { get; init; }
+        public string Key { get; set; }
 
 #pragma warning disable SA1300, IDE1006
-        public string en { private get; init; }
+        public string en { private get; set; }
 
-        public string ru { private get; init; }
+        public string ru { private get; set; }
 #pragma warning restore SA1300, IDE1006
 
         public string TranslationByName(CultureInfo cultureInfo)

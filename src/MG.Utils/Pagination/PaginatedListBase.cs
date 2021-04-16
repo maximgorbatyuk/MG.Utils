@@ -2,10 +2,10 @@
 {
     public abstract record PaginatedListBase
     {
-        public int CurrentPage { get; init; }
+        public int CurrentPage { get; protected set; }
 
-        public int PageSize { get; init; }
+        public int PageSize { get; protected set; }
 
-        public int TotalItems { get; init; }
+        public int TotalItems { get; protected set; }
     }
 }
