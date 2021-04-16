@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,7 +14,7 @@
     <tags></tags>
     <dependencies>
       <group targetFramework="net5.0">
-        <dependency id="MaximGorbatyuk.Utils.Validation" version="1.0.1" />
+        <dependency id="MaximGorbatyuk.Utils.Validation" version="1.0.3" />
       </group>
     </dependencies>
   </metadata>
