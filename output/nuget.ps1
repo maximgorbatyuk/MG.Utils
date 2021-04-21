@@ -13,6 +13,7 @@ $data = @(
    "./../src/MG.Utils.Azure.ServiceBus/" ,
    "./../src/MG.Utils.Export/" ,
    "./../src/MG.Utils.Smtp/" ,
+   "./../src/MG.Utils.Kafka/" ,
    "./../src/MG.Utils.Validation/" 
 );
 
