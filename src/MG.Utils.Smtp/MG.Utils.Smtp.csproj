@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
 	<LangVersion>latest</LangVersion>
 	<Company>@maximgorbatyuk</Company>
 	<Copyright>Copyright © @maximgorbatyuk</Copyright>
@@ -21,7 +21,7 @@
 		<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.6" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
-		<PackageReference Include="MailKit" Version="2.10.1" />
+		<PackageReference Include="MailKit" Version="2.11.1" />
 	</ItemGroup>
 
 </Project>

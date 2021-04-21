@@ -2,7 +2,7 @@
 <package >
   <metadata>
 	  <id>MaximGorbatyuk.Utils.AspNetCore.Middlewares</id>
-	  <version>1.0.3</version>
+	  <version>1.0.4</version>
 	  <title>MaximGorbatyuk.Utils.AspNetCore.Middlewares - useful classes for cut your routine</title>
 	  <authors>@maximgorbatyuk</authors>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,11 +13,13 @@
 	  <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
 	  <tags></tags>
 	  <dependencies>
-		  <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.6" />
-		  <dependency id="Microsoft.AspNetCore.Http" version="2.2.2" />
-		  <dependency id="Microsoft.AspNetCore.Mvc.Abstractions" version="2.2.0" />
-		  <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" />
-		  <dependency id="Microsoft.Extensions.Logging.Abstractions" version="5.0.0" />
+      <group targetFramework="netstandard2.1">
+        <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.6" />
+        <dependency id="Microsoft.AspNetCore.Http" version="2.2.2" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Abstractions" version="2.2.0" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="5.0.0" />
+      </group>
 	  </dependencies>
   </metadata>
 </package>

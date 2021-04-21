@@ -54,7 +54,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Validation.Test", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Smtp.Test", "MG.Utils.Smtp.Test\MG.Utils.Smtp.Test.csproj", "{5ED130B9-09F5-40EF-8672-7E271C4585AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.AspNetCore.DatabaseView", "MG.Utils.AspNetCore.DatabaseView\MG.Utils.AspNetCore.DatabaseView.csproj", "{C177FCC0-C11B-4990-A1EE-AB9F567F57AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.DatabaseView", "MG.Utils.AspNetCore.DatabaseView\MG.Utils.AspNetCore.DatabaseView.csproj", "{C177FCC0-C11B-4990-A1EE-AB9F567F57AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
