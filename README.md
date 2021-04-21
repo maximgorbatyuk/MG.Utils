@@ -4,12 +4,12 @@
 
 ### Generic packages
 
-- [MaximGorbatyuk.Utils](src/MaximGorbatyuk.Utils/)
-- [MaximGorbatyuk.Utils.Abstract](/src/MG.Utils.Abstract/)
-- [MaximGorbatyuk.Utils.Validation](/src/MG.Utils.Validation/)
-- [MaximGorbatyuk.Utils.Authentication](/src/MaximGorbatyuk.Utils.Authentication/)
-- [MaximGorbatyuk.Utils.Export](/src/MaximGorbatyuk.Utils.Export/)
-- [MaximGorbatyuk.Utils.Smtp](/src/MaximGorbatyuk.Utils.Smtp/)
+- [MaximGorbatyuk.Utils](src/MaximGorbatyuk.Utils/readme.md)
+- [MaximGorbatyuk.Utils.Abstract](/src/MG.Utils.Abstract/readme.md)
+- [MaximGorbatyuk.Utils.Validation](/src/MG.Utils.Validation/readme.md)
+- [MaximGorbatyuk.Utils.Authentication](/src/MaximGorbatyuk.Utils.Authentication/readme.md)
+- [MaximGorbatyuk.Utils.Export](/src/MaximGorbatyuk.Utils.Export/readme.md)
+- [MaximGorbatyuk.Utils.Smtp](/src/MaximGorbatyuk.Utils.Smtp/readme.md)
 
 ### AspNetCore related packages
 
