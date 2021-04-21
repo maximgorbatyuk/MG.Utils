@@ -1,6 +1,15 @@
 # MaximGorbatyuk.Utils.Validation
 
-This library is purposed for class validation based on Data Annotation attributes. Example:
+This library is purposed for class validation based on Data Annotation attributes.
+
+## Get started
+
+1. Install the [nuget](https://www.nuget.org/packages/MaximGorbatyuk.Utils.Validation/) `dotnet add package MaximGorbatyuk.Utils.Validation`.
+2. Add data abbotation attrbitutes for properties of your class.
+3. Use the extension method `instance.ThrowIfInvalid()`.
+4. If the instance properties are valid, now exception will be throw. Otherwise, the `MG.Utils.Validation.Exception.EntityInvalidException` will appear.
+
+## Example
 
 ```csharp
 
