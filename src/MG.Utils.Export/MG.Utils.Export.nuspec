@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-	  <id>MaximGorbatyuk.Utils.Kafka</id>
-	  <version>1.0.0</version>
-	  <title>MaximGorbatyuk.Utils.Export - useful classes for cut your routine</title>
-	  <authors>@maximgorbatyuk</authors>
-	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	  <license type="expression">MIT</license>
-	  <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
-	  <description>Useful classes for cut your routine with ASP.Net core</description>
-	  <releaseNotes>First release.</releaseNotes>
-	  <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
-	  <tags></tags>
-	  <dependencies>
+    <id>MaximGorbatyuk.Utils.Export</id>
+    <version>1.0.3</version>
+    <title>MaximGorbatyuk.Utils.Export - useful classes for cut your routine</title>
+    <authors>@maximgorbatyuk</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
+    <description>Useful classes for cut your routine with ASP.Net core</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+    <tags></tags>
+    <dependencies>
       <group targetFramework="netstandard2.1">
-        <dependency id="AspNetCore.HealthChecks.Kafka" version="5.0.1" />
-        <dependency id="Confluent.Kafka" version="1.6.3" />
-        <dependency id="MaximGorbatyuk.Utils.Abstract" version="1.0.6" />
-        <dependency id="System.Text.Json" version="5.0.2" />
+        <dependency id="MaximGorbatyuk.Utils" version="1.0.6" />
+        <dependency id="ClosedXML" version="0.95.4" />
+        <dependency id="itext7" version="7.1.14" />
+        <dependency id="itext7.pdfhtml" version="3.0.3" />
       </group>
-	  </dependencies>
+    </dependencies>
   </metadata>
 </package>
