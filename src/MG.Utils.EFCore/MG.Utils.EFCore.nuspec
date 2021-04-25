@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>MaximGorbatyuk.Utils.EFCore</id>
+    <version>1.0.0</version>
+    <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
+    <authors>@maximgorbatyuk</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/maximgorbatyuk/MG.Utils</projectUrl>
+    <description>Abstract classes and interfaces for the different app projects</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
+    <tags></tags>
+	<dependencies>
+    <group targetFramework="netstandard2.1">
+    </group>
+	</dependencies>
+  </metadata>
+	
+</package>

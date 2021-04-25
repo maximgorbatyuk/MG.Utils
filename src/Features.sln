@@ -56,7 +56,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Smtp.Test", "MG.Ut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.AspNetCore.DatabaseView", "MG.Utils.AspNetCore.DatabaseView\MG.Utils.AspNetCore.DatabaseView.csproj", "{C177FCC0-C11B-4990-A1EE-AB9F567F57AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.Kafka", "MG.Utils.Kafka\MG.Utils.Kafka.csproj", "{EA484257-66A1-4429-BF58-79235A63B813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MG.Utils.Kafka", "MG.Utils.Kafka\MG.Utils.Kafka.csproj", "{EA484257-66A1-4429-BF58-79235A63B813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Utils.EFCore", "MG.Utils.EFCore\MG.Utils.EFCore.csproj", "{FC0A9701-D230-4F29-8AC3-F68AD44928CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -152,6 +154,10 @@ Global
 		{EA484257-66A1-4429-BF58-79235A63B813}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA484257-66A1-4429-BF58-79235A63B813}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA484257-66A1-4429-BF58-79235A63B813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC0A9701-D230-4F29-8AC3-F68AD44928CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0A9701-D230-4F29-8AC3-F68AD44928CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0A9701-D230-4F29-8AC3-F68AD44928CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0A9701-D230-4F29-8AC3-F68AD44928CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
