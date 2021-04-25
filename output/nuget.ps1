@@ -14,6 +14,7 @@ $data = @(
    "./../src/MG.Utils.Export/" ,
    "./../src/MG.Utils.Smtp/" ,
    "./../src/MG.Utils.Kafka/" ,
+   "./../src/MG.Utils.EFCore/" 
    "./../src/MG.Utils.Validation/" 
 );
 
