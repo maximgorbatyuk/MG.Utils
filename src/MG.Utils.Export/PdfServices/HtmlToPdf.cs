@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using iText.Html2pdf;
-using iText.Kernel.Pdf;
+using DinkToPdf;
+using DinkToPdf.Contracts;
 using MG.Utils.Abstract;
 
 namespace MG.Utils.Export.PdfServices
@@ -10,25 +10,30 @@ namespace MG.Utils.Export.PdfServices
     {
         private readonly string _htmlContent;
 
-        public HtmlToPdf(string htmlContent)
+        private readonly IConverter _converter;
+
+        public HtmlToPdf(string htmlContent, IConverter converter)
         {
+            _converter = converter;
             _htmlContent = htmlContent.ThrowIfNull(nameof(htmlContent));
         }
 
-        public async Task<Stream> WriteAsync()
+        public async Task<byte[]> AsByteArrayAsync()
         {
-            var workStream = new MemoryStream();
-
-            await using var pdfWriter = new PdfWriter(workStream);
-            pdfWriter.SetCloseStream(false);
-            using var document = HtmlConverter.ConvertToDocument(_htmlContent, pdfWriter);
-
-            // Returns the written-to MemoryStream containing the PDF.
-            byte[] byteInfo = workStream.ToArray();
-            workStream.Write(byteInfo, 0, byteInfo.Length);
-            workStream.Position = 0;
-
-            return workStream;
+            var webSettings = new WebSettings
+            {
+                DefaultEncoding = "utf-8"
+            };
+            var objectSettings = new ObjectSettings
+            {
+                WebSettings = webSettings,
+                HtmlContent = _htmlContent
+            };
+            var htmlToPdfDocument = new HtmlToPdfDocument()
+            {
+                Objects = { objectSettings },
+            };
+            return await Task.Run(() => _converter.Convert(htmlToPdfDocument));
         }
     }
 }

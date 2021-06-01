@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils.Export</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <title>MaximGorbatyuk.Utils.Export - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -16,8 +16,7 @@
       <group targetFramework="netstandard2.1">
         <dependency id="MaximGorbatyuk.Utils" version="1.0.6" />
         <dependency id="ClosedXML" version="0.95.4" />
-        <dependency id="itext7" version="7.1.14" />
-        <dependency id="itext7.pdfhtml" version="3.0.3" />
+        <dependency id="DinkToPdf" version="1.0.8" />
       </group>
     </dependencies>
   </metadata>
