@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MaximGorbatyuk.Utils.EFCore</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>MaximGorbatyuk.Utils - useful classes for cut your routine</title>
     <authors>@maximgorbatyuk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,8 +15,8 @@
 	<dependencies>
     <group targetFramework="netstandard2.1">
       <dependency id="MaximGorbatyuk.Utils" version="1.0.6" />
-      <dependency id="Microsoft.EntityFrameworkCore" version="5.0.5" />
-      <dependency id="Microsoft.EntityFrameworkCore.Relational" version="5.0.5" />
+      <dependency id="Microsoft.EntityFrameworkCore" version="5.0.6" />
+      <dependency id="Microsoft.EntityFrameworkCore.Relational" version="5.0.6" />
       <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" />
       <dependency id="Microsoft.Extensions.Configuration.EnvironmentVariables" version="5.0.0" />
       <dependency id="Microsoft.Extensions.Configuration.Json" version="5.0.0" />
