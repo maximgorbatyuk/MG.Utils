@@ -2,7 +2,7 @@
 <package >
   <metadata>
 	  <id>MaximGorbatyuk.Utils.Authentication</id>
-	  <version>1.0.2</version>
+	  <version>1.0.3</version>
 	  <title>MaximGorbatyuk.Utils.Authentication - useful classes for cut your routine</title>
 	  <authors>@maximgorbatyuk</authors>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
