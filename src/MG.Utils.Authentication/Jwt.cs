@@ -2,7 +2,7 @@
 
 namespace MG.Utils.Authentication
 {
-    public readonly struct Jwt
+    public class Jwt
     {
         public Jwt(string apiToken, DateTimeOffset expiresAt)
         {

@@ -2,9 +2,9 @@
 {
     public class StandardAllowedFileExtensionsAttribute : AllowedExtensionsAttribute
     {
-        private static readonly string[] _extensions =
+        protected static readonly string[] _extensions =
         {
-            ".pdf", ".docx", "xlsx", ".zip"
+            ".pdf", ".docx", ".xlsx", ".zip"
         };
 
         public StandardAllowedFileExtensionsAttribute()

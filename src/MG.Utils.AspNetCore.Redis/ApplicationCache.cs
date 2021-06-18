@@ -43,8 +43,9 @@ namespace MG.Utils.AspNetCore.Redis
         public async Task<T> GetAsync<T>(string key)
         {
             key.ThrowIfNullOrEmpty(nameof(key));
+            var serialized = await _cache.GetAsync(key);
 
-            return JsonSerializer.Deserialize<T>(utf8Json: await _cache.GetAsync(key));
+            return serialized is not null ? JsonSerializer.Deserialize<T>(utf8Json: serialized) : default;
         }
 
         public async Task RemoveAsync(string key)

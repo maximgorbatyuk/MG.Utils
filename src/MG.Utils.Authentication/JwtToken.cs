@@ -11,25 +11,38 @@ namespace MG.Utils.Authentication
     {
         private readonly JwtSecretKey _secret;
         private readonly ClaimsIdentity _user;
-        private readonly int _expireAfterDays;
         private readonly NonNullableString _issuer;
         private readonly NonNullableString _audience;
-
         private readonly Lazy<Jwt> _jwt;
+        private readonly DateTime _expiresAt;
 
         public JwtToken(
             NonNullableString secretKey,
             ClaimsIdentity user,
             NonNullableString issuer,
             NonNullableString audience,
-            int expireAfterDays = 1)
+            int expireAfterHours = 1)
+            : this(
+                secretKey,
+                user,
+                issuer,
+                audience,
+                DateTime.Now.AddHours(expireAfterHours))
+        {
+        }
+
+        public JwtToken(
+            NonNullableString secretKey,
+            ClaimsIdentity user,
+            NonNullableString issuer,
+            NonNullableString audience,
+            DateTime expiresAt)
         {
             _user = user;
             _issuer = issuer;
             _audience = audience;
-            _expireAfterDays = expireAfterDays;
+            _expiresAt = expiresAt;
             _secret = new JwtSecretKey(secretKey);
-
             _jwt = new Lazy<Jwt>(AsJwtInternal);
         }
 
@@ -39,20 +52,18 @@ namespace MG.Utils.Authentication
         {
             var handler = new JwtSecurityTokenHandler();
 
-            var expiresAt = DateTime.Now.AddDays(_expireAfterDays);
-
             JwtSecurityToken token = handler.CreateJwtSecurityToken(
                 issuer: _issuer,
                 audience: _audience,
                 subject: _user,
-                expires: expiresAt,
+                expires: _expiresAt,
                 issuedAt: DateTime.Now,
                 signingCredentials: new SigningCredentials(
                     key: _secret,
                     algorithm: SecurityAlgorithms.HmacSha256Signature));
 
             string apiToken = handler.WriteToken(token);
-            return new Jwt(apiToken, expiresAt);
+            return new Jwt(apiToken, _expiresAt);
         }
 
         public static implicit operator Jwt(JwtToken token)
