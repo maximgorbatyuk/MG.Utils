@@ -21,7 +21,6 @@
 		<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.6" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
-		<PackageReference Include="MailKit" Version="2.11.1" />
 	</ItemGroup>
 
 </Project>

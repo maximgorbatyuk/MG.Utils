@@ -13,6 +13,8 @@ namespace MG.Utils.Smtp
 
         public NonNullableString Password { get; }
 
+        public NonNullableString From { get; }
+
         public SmtpEmailSettings(IConfiguration configuration)
         {
             var section = configuration.GetSection("Azure").GetSection("Smtp");
@@ -20,6 +22,7 @@ namespace MG.Utils.Smtp
             Port = new NonNullableInt(section[nameof(Port)]);
             UserName = new NonNullableString(section[nameof(UserName)]);
             Password = new NonNullableString(section[nameof(Password)]);
+            From = new NonNullableString(section[nameof(From)]);
         }
     }
 }

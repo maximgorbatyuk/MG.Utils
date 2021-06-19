@@ -23,7 +23,5 @@ namespace MG.Utils.Smtp
             _logger.LogInformation(message.DebugInfo());
             return Task.CompletedTask;
         }
-
-        public string Logs => string.Empty;
     }
 }
