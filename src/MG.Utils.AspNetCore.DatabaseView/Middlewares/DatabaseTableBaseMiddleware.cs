@@ -10,7 +10,7 @@ namespace MG.Utils.AspNetCore.DatabaseView.Middlewares
         private readonly RequestDelegate _next;
         private readonly string _contentType;
 
-        protected DatabaseTableBaseMiddleware(RequestDelegate next, string contentType = "text/html; charset=UTF-8")
+        protected DatabaseTableBaseMiddleware(RequestDelegate next, string contentType = "text/plain; charset=UTF-8")
         {
             _next = next;
             _contentType = contentType;

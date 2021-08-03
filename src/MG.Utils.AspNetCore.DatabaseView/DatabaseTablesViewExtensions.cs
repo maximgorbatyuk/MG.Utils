@@ -7,9 +7,9 @@ namespace MG.Utils.AspNetCore.DatabaseView
 {
     public static class DatabaseTablesViewExtensions
     {
-        public const string DefaultOutputRoute = "/database-tables/view";
-        public const string DefaultReadRoute = "/database-tables/read";
-        public const string DefaultExecuteRoute = "/database-tables/execute";
+        public const string DefaultOutputRoute = "/debug/database-tables/view";
+        public const string DefaultReadRoute = "/debug/database-tables/read";
+        public const string DefaultExecuteRoute = "/debug/database-tables/execute";
 
         public static IDatabaseTablesSettings<TDbContext> UseDatabaseTable<TDbContext>(
             this IApplicationBuilder app,

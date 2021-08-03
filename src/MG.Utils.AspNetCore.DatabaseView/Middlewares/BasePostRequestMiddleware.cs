@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -9,29 +10,61 @@ namespace MG.Utils.AspNetCore.DatabaseView.Middlewares
     public abstract class BasePostRequestMiddleware<TDbContext> : DatabaseTableBaseMiddleware<TDbContext>
         where TDbContext : DbContext
     {
-        protected BasePostRequestMiddleware(RequestDelegate next, string contentType = "text/html; charset=UTF-8")
+        protected BasePostRequestMiddleware(RequestDelegate next, string contentType = "text/plain; charset=UTF-8")
             : base(next, contentType)
         {
         }
 
         protected override async Task<string> ResponseContentAsync(HttpContext httpContext, TDbContext context)
         {
-            httpContext.Request.Body.Seek(0, SeekOrigin.Begin);
             using var reader = new StreamReader(httpContext.Request.Body);
             var body = await reader.ReadToEndAsync();
 
-            var bodyParams = body.Split('&');
+            var request = DeserializeOrFail(body).ValidOrFail();
 
-            if (bodyParams.Length != 1 || (bodyParams.Length > 1 && !bodyParams[0].StartsWith("query=")))
+            return await ResponseContentAsync(request.Query, httpContext, context);
+        }
+
+        private static SqlRequest DeserializeOrFail(string source)
+        {
+            if (string.IsNullOrEmpty(source))
             {
-                throw new InvalidOperationException($"The request body doesn't contain query. {body}");
+                throw new ArgumentNullException(nameof(source));
             }
 
-            var query = bodyParams[0].Replace("query=", string.Empty);
+            try
+            {
+                var sourceToProcess = source
+                    .Replace("\t", string.Empty)
+                    .Replace("\r", string.Empty)
+                    .Replace("\n", string.Empty);
 
-            return await ResponseContentAsync(query, httpContext, context);
+                return JsonSerializer.Deserialize<SqlRequest>(sourceToProcess, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            }
+            catch (Exception e)
+            {
+                throw new InvalidOperationException($"Could not deserialize body: {source}", e);
+            }
         }
 
         protected abstract Task<string> ResponseContentAsync(string query, HttpContext httpContext, TDbContext context);
+
+        public record SqlRequest
+        {
+            public string Query { get; set; }
+
+            public SqlRequest ValidOrFail()
+            {
+                if (string.IsNullOrEmpty(Query))
+                {
+                    throw new InvalidOperationException($"The query should not be empty");
+                }
+
+                return this;
+            }
+        }
     }
 }
