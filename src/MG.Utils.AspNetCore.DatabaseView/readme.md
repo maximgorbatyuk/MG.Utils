@@ -2,8 +2,6 @@
 
 This nuget allows you to view table content of your ASP.NET core application during runtime. The nuget creates a special endpoint and then return tables and data represented in html form.
 
-The default route is `/database-table/view`, but you are able to use any other route via settings.
-
 ## Get started
 
 1. Install the [nuget](https://www.nuget.org/packages/MaximGorbatyuk.Utils.AspNetCore.DatabaseView):
@@ -22,8 +20,11 @@ class Startup
     {
         // ... some settings
 
-        // default route is /database-tables/view
-        app.UseDatabaseTableHtml<AwesomeDbContext>(); // or app.UseDatabaseTableHtml<AwesomeDbContext>("/your-awesome-route"
+        app
+            .UseDatabaseTable<AwesomeDbContext>() 
+            .UseTableOutputEndpoint() // default route is /database-tables/view
+            .UseReadEndpoint() // default route is /database-tables/read
+            .UseExecuteEndpoint(); // default route is /database-tables/execute
 
         app.UseEndpoints(endpoints =>
         {
@@ -36,4 +37,4 @@ class Startup
 
 ```
 
-3. Open `https:localhost:5001/database-tables/view` in your browser and view your data
+3. Open `https:localhost:5001/database-tables/view?tableName=<tableName>` in your browser and view your data

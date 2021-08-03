@@ -2,7 +2,7 @@
 <package >
   <metadata>
 	  <id>MaximGorbatyuk.Utils.AspNetCore.DatabaseView</id>
-	  <version>1.0.1</version>
+	  <version>1.0.2</version>
 	  <title>MaximGorbatyuk.Utils.AspNetCore - useful classes for cut your routine</title>
 	  <authors>@maximgorbatyuk</authors>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,7 +11,6 @@
 	  <description>Useful classes for cut your routine with ASP.Net core</description>
 	  <releaseNotes>First release.</releaseNotes>
 	  <copyright>Copyright (c) @maximgorbatyuk, 2021</copyright>
-	  <tags></tags>
 	  <dependencies>
       <group targetFramework="netstandard2.1">
         <dependency id="Microsoft.AspNetCore.Http" version="2.2.2" />
