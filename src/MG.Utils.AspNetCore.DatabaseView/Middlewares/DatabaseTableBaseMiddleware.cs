@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace MG.Utils.AspNetCore.DatabaseView.Middlewares
 {
@@ -10,10 +11,13 @@ namespace MG.Utils.AspNetCore.DatabaseView.Middlewares
         private readonly RequestDelegate _next;
         private readonly string _contentType;
 
-        protected DatabaseTableBaseMiddleware(RequestDelegate next, string contentType = "text/plain; charset=UTF-8")
+        protected IDatabaseTablesSettingsBase Settings { get; }
+
+        protected DatabaseTableBaseMiddleware(RequestDelegate next, IOptions<IDatabaseTablesSettingsBase> settingsBase, string contentType = "text/plain; charset=UTF-8")
         {
             _next = next;
             _contentType = contentType;
+            Settings = settingsBase.Value;
         }
 
         public async Task InvokeAsync(HttpContext context, TDbContext db)

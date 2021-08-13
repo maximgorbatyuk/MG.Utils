@@ -1,14 +1,15 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace MG.Utils.AspNetCore.DatabaseView.Middlewares
 {
     public class ExecuteSQlMiddleware<TDbContext> : BasePostRequestMiddleware<TDbContext>
         where TDbContext : DbContext
     {
-        public ExecuteSQlMiddleware(RequestDelegate next)
-            : base(next)
+        public ExecuteSQlMiddleware(RequestDelegate next, IOptions<IDatabaseTablesSettingsBase> settingsBase)
+            : base(next, settingsBase)
         {
         }
 

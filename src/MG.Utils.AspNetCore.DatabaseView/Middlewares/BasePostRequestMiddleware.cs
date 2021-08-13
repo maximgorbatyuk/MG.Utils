@@ -4,14 +4,15 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace MG.Utils.AspNetCore.DatabaseView.Middlewares
 {
     public abstract class BasePostRequestMiddleware<TDbContext> : DatabaseTableBaseMiddleware<TDbContext>
         where TDbContext : DbContext
     {
-        protected BasePostRequestMiddleware(RequestDelegate next, string contentType = "text/plain; charset=UTF-8")
-            : base(next, contentType)
+        protected BasePostRequestMiddleware(RequestDelegate next, IOptions<IDatabaseTablesSettingsBase> settingsBase)
+            : base(next, settingsBase)
         {
         }
 

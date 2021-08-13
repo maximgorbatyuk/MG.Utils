@@ -1,14 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace MG.Utils.AspNetCore.DatabaseView
 {
-    public interface IDatabaseTablesSettings<TContext>
+    public interface IDatabaseTablesSettings<TContext> : IDatabaseTablesSettingsBase
         where TContext : DbContext
     {
-        IApplicationBuilder App { get; }
-
-        int? Port { get; }
     }
 }
