@@ -37,6 +37,11 @@ namespace MG.Utils.AspNetCore.Middlewares
             {
                 message = "The endpoint is not implemented yet. Please, keep calm and wait for a while";
             }
+            else if (exception.GetType().IsSubclassOf(typeof(InvalidOperationException)))
+            {
+                statusCode = StatusCodes.Status400BadRequest;
+                message = FormatErrorMessage(exception.Message);
+            }
             else if (StatusCodeConversion.TryGetValue(exception.GetType(), out int status))
             {
                 statusCode = status;
