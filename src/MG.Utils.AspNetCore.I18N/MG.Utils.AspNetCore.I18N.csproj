@@ -22,8 +22,8 @@
 	<PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
 	<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
 	<PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />
-	<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
-	<PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.4" />
+	<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+	<PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
