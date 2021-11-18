@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using DinkToPdf;
 using DinkToPdf.Contracts;
 using MG.Utils.Abstract;
@@ -18,7 +17,7 @@ namespace MG.Utils.Export.PdfServices
             _htmlContent = htmlContent.ThrowIfNull(nameof(htmlContent));
         }
 
-        public async Task<byte[]> AsByteArrayAsync()
+        public async Task<byte[]> AsByteArrayAsync(GlobalSettings settings = null)
         {
             var webSettings = new WebSettings
             {
@@ -32,6 +31,7 @@ namespace MG.Utils.Export.PdfServices
             var htmlToPdfDocument = new HtmlToPdfDocument()
             {
                 Objects = { objectSettings },
+                GlobalSettings = settings ?? new GlobalSettings()
             };
             return await Task.Run(() => _converter.Convert(htmlToPdfDocument));
         }
