@@ -20,12 +20,12 @@
 	<ItemGroup>
 		<PackageReference Include="MaximGorbatyuk.Utils.Abstract" Version="1.0.6" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
-		<PackageReference Include="ServiceStack.Redis" Version="5.11.0" />
-		<PackageReference Include="StackExchange.Redis" Version="2.2.4" />
-		<PackageReference Include="System.Text.Json" Version="5.0.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+		<PackageReference Include="ServiceStack.Redis" Version="5.13.0" />
+		<PackageReference Include="StackExchange.Redis" Version="2.2.88" />
+		<PackageReference Include="System.Text.Json" Version="6.0.0" />
 	</ItemGroup>
 
 </Project>

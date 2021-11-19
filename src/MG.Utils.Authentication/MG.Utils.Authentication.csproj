@@ -21,7 +21,7 @@
 		<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.6" />
 		<PackageReference Include="Microsoft.Identity.Client" Version="4.25.0" />
 		<PackageReference Include="Microsoft.Identity.Web" Version="1.5.1" />
-		<PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
+		<PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.9" />
 	</ItemGroup>
 
 </Project>

@@ -11,7 +11,9 @@ namespace MG.Utils.Export.PdfServices
 
         private readonly IConverter _converter;
 
-        public HtmlToPdf(string htmlContent, IConverter converter)
+        public HtmlToPdf(
+            string htmlContent,
+            IConverter converter)
         {
             _converter = converter;
             _htmlContent = htmlContent.ThrowIfNull(nameof(htmlContent));
@@ -19,21 +21,42 @@ namespace MG.Utils.Export.PdfServices
 
         public async Task<byte[]> AsByteArrayAsync(GlobalSettings settings = null)
         {
-            var webSettings = new WebSettings
+            var htmlToPdfDocument = GetHtmlToPdfDocument();
+            return await Task.Run(() => _converter.Convert(htmlToPdfDocument));
+        }
+
+        public byte[] AsByteArray()
+        {
+            var htmlToPdfDocument = GetHtmlToPdfDocument();
+            return _converter.Convert(htmlToPdfDocument);
+        }
+
+        protected virtual WebSettings GetWebSettings()
+        {
+            return new WebSettings
             {
                 DefaultEncoding = "utf-8"
             };
-            var objectSettings = new ObjectSettings
+        }
+
+        protected virtual ObjectSettings GetObjectSettings()
+        {
+            return new ObjectSettings
             {
-                WebSettings = webSettings,
+                WebSettings = GetWebSettings(),
                 HtmlContent = _htmlContent
             };
-            var htmlToPdfDocument = new HtmlToPdfDocument()
+        }
+
+        protected virtual HtmlToPdfDocument GetHtmlToPdfDocument()
+        {
+            return new HtmlToPdfDocument
             {
-                Objects = { objectSettings },
-                GlobalSettings = settings ?? new GlobalSettings()
+                Objects =
+                {
+                    GetObjectSettings()
+                },
             };
-            return await Task.Run(() => _converter.Convert(htmlToPdfDocument));
         }
     }
 }

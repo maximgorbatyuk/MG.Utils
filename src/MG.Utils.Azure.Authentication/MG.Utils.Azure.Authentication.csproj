@@ -19,7 +19,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="MaximGorbatyuk.Utils" Version="1.0.6" />
-		<PackageReference Include="MaximGorbatyuk.Utils.Authentication" Version="1.0.0" />
+		<PackageReference Include="MaximGorbatyuk.Utils.Authentication" Version="1.0.3" />
 	</ItemGroup>
 
 </Project>
