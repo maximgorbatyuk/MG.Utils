@@ -11,11 +11,15 @@ namespace MG.Utils.Export.PdfServices
 
         private readonly IConverter _converter;
 
+        private readonly GlobalSettings _globalSettings;
+
         public HtmlToPdf(
             string htmlContent,
-            IConverter converter)
+            IConverter converter,
+            GlobalSettings globalSettings = null)
         {
             _converter = converter;
+            _globalSettings = globalSettings ?? new GlobalSettings();
             _htmlContent = htmlContent.ThrowIfNull(nameof(htmlContent));
         }
 
@@ -56,6 +60,7 @@ namespace MG.Utils.Export.PdfServices
                 {
                     GetObjectSettings()
                 },
+                GlobalSettings = _globalSettings
             };
         }
     }
